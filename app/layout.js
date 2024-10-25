@@ -1,6 +1,33 @@
 import Navigation from "@/app/_components/Navigation";
+import Footer from "./_components/Footer";
 
 import "@/app/_styles/globals.css"
+
+import {Anonymous_Pro} from "next/font/google";
+
+const googlefontheading = Anonymous_Pro({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
+
+// ----- FONT AWSOME -----
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
+
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+// library.add(fab, faCoffee);
+
+// Nun können Sie die Icons wie folgt verwenden:
+{/* <FontAwesomeIcon icon={['fab', 'twitter']} />
+<FontAwesomeIcon icon="coffee" /> */}
+
+
 
 export const metadata = {
     title: {
@@ -13,7 +40,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="de">
-        <body className="bg-background text-primary-400">
+        <body className={`${googlefontheading.className}`}>
             <header>
             <Navigation />
             </header>
@@ -22,7 +49,7 @@ export default function RootLayout({children}) {
                 {children}
             </main>
 
-            <footer>Copyright by JB</footer>
+            <Footer></Footer>
             
         </body>
         </html>

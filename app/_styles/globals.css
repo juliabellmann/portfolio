@@ -1,42 +1,200 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* -------------- */
 
-/*
-@layer components {
-  .spinner {
-    margin: 3.2rem auto 1.6rem;
-    width: 60px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 8px solid theme('colors.primary.900');
-    border-right-color: theme('colors.primary.200');
-    animation: rotate 1s infinite linear;
-  }
+/* Variablen Farben etc */
+:root {
+  --hauptfarbe-hell: #ffffff;
+  --hauptfarbe-dunkel: #000000;
+  --hintergrund-dunkel: rgba(51, 51, 51, 0.5);
+  --akzentfarbe: #005452;
+  --akzentfarbe-2: #04212f;
+  --background-section-one: #1a1a1a7f;
 
-  .spinner-mini {
-    margin: 0;
-    width: 20px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 2px solid theme('colors.primary.200');
-    border-right-color: transparent;
-    animation: rotate 1s infinite linear;
-  }
+  --color-font: white;
 
-  @keyframes rotate {
-    to {
-      transform: rotate(1turn);
-    }
-  }
+  --height-nav-footer: 75px;
 }
-*/
-/* For data picker 
 
-.rdp {
-  --rdp-cell-size: 32px !important;
-  --rdp-accent-color: theme('colors.accent.500') !important;
-  --rdp-background-color: theme('colors.accent.600') !important;
-  margin: 0 !important;
+/* ------- BASE ------- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+
 }
-*/
+
+html {
+  font-size: 100%; /* um "Font-Size-Bug zu vermeiden */
+  scroll-behavior: smooth;
+}
+
+/* falls ein alter Browser die neuen HTML5 Elemente nicht kennt */
+article, aside, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+  padding: 0;
+}
+
+body { 
+  background-color: var(--hauptfarbe-dunkel);
+}
+
+main {
+  margin: 0 5rem;
+  color: var(--color-font);
+  height: 70vh;
+}
+
+/* -------------- */
+
+h1 {
+  font-size: 3rem;
+  margin: 6rem 0 2.5rem 0;
+  text-align: center;
+}
+/* -------------- */
+
+svg {
+  height: 2rem;
+  fill: var(--akzentfarbe-2);
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* -------------- */
+.heading-big-anchor {
+  /* position: absolute; */
+}
+.heading-big {
+  position: absolute; 
+  top: 6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  font-size: 7vw;
+  color: var(--akzentfarbe);
+  opacity: 0.25;
+  z-index: -1;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+}
+
+/* ------- NAVIGATION ------- */
+nav {
+  background-color: var(--background-section-one);
+  color: var(--color-font);
+
+  height: var(--height-nav-footer);
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around; /* beide div Container ausrichten */
+  align-items: center; /* horizontal zentriert */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  color: var(--color-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Padding für Innenabstand */
+  transition: background-color 0.3s ease; /* Transition-Effekt für die Hintergrundfarbe */
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around; /* horizontale Ausrichtung Links im Container */
+}
+
+nav ul a {
+  text-decoration: none;
+  margin: 2rem; /* hmm optimierbar */
+}
+
+/* noch nicht besuchte Seite */
+nav ul a:link {
+  color: grey;
+}
+
+/* bereits besucht */
+nav ul a:visited {
+  color: grey;
+}
+
+/* mit Tab fokussiert */
+nav ul a:focus {
+  color: grey;
+  border: 1px grey dotted;
+}
+
+/* Maus darüber */
+nav ul a:hover {
+  color: var(--color-font);
+  text-decoration: underline;
+}
+
+/* Maus gedrückt */
+nav ul a:active {
+  color: red;
+}
+
+/* ------- PROJECTS ------- */
+.container-cards {
+  
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--akzentfarbe-2);
+  margin: 1rem;
+  padding: 1rem;
+
+  /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
+  width: 25%;
+
+  /* Text in Card zentrieren */
+  display: flex;
+  justify-content: center;
+}
+
+/* ------- FOOTER ------- */
+
+footer {
+  background-color: var(--background-section-one);
+  color: white;
+
+  height: var(--height-nav-footer);
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer div {
+  display: flex;
+  gap: 3rem;
+}
