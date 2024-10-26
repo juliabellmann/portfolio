@@ -1,10 +1,9 @@
-export default function AboutMe() {
+import AboutMe from "../_components/Aboutme";
+
+export default function AboutMePage() {
     return (
         <>
-        <div>
-            <h1 className="heading-big-anchor">About Me</h1> 
-            <h2 className="heading-big">About Me</h2>
-        </div>
+            <AboutMe></AboutMe>
         </>
     );
 }
