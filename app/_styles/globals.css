@@ -7,7 +7,7 @@
 :root {
   --hauptfarbe-hell: #ffffff;
   --hauptfarbe-dunkel: #000000;
-  --hintergrund-dunkel: rgba(51, 51, 51, 0.5);
+  --hintergrund-dunkel: rgba(51, 51, 51, 0.25);
   --akzentfarbe: #005452;
   --akzentfarbe-2: #04212f;
   --background-section-one: #1a1a1a7f;
@@ -41,17 +41,34 @@ body {
 }
 
 main {
-  margin: 0 7rem;
+  margin: 0 10rem;
+
   color: var(--color-font);
+  /* position: sticky;
+  top: var(--height-nav-footer);
+  bottom: var(--height-nav-footer); */
   height: 70vh;
   text-align: center;
+}
+
+article {
+  padding-bottom: 5rem;
+}
+
+iframe {
+  min-height: 60vh;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 /* -------------- */
 
 h1 {
   font-size: 3rem;
-  margin: 6rem 0 2.5rem 0;
+  margin: 1rem 0 7rem 0;
+}
+hr {
+  margin: 2rem 0;
 }
 /* -------------- */
 
@@ -79,18 +96,15 @@ aside div {
 }
 
 /* -------------- */
-.heading-big-anchor {
-  /* position: relative; */
-}
 .heading-big {
-  position: absolute; 
-  top: 6rem;
+  position: relative; 
+  top: 10rem;
   left: 0;
   right: 0;
   /* margin: auto; */
   
   font-size: 7vw;
-  color: var(--akzentfarbe);
+  color: var(--akzentfarbe-2);
   opacity: 0.25;
   z-index: -1;
   font-weight: bold;
@@ -135,7 +149,24 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  margin: 2rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+}
+
+nav svg {
+  height: 1.5rem;
+  fill: grey;
+  padding-right: 0.5rem;
 }
 
 /* noch nicht besuchte Seite */
@@ -210,4 +241,8 @@ footer {
 footer div {
   display: flex;
   gap: 3rem;
+}
+
+.link-github {
+  text-decoration: underline;
 }

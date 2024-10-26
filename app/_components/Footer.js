@@ -1,6 +1,7 @@
 export default function Footer() {
     return (
 
+        <>
         <footer>
             <div>
                 <div>
@@ -14,6 +15,7 @@ export default function Footer() {
                 copyright by jb
             </div>
         </footer>
+        </>
     );
 
 }

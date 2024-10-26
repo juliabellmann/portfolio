@@ -1,8 +1,8 @@
 export default function Skills() {
     return (
-        <>
-            <h1>Fertigkeiten</h1> 
+        <article>
             <h2 className="heading-big">Skills</h2>
+            <h1>Fertigkeiten</h1> 
 
             <section>
                 <h3>Documentation and formatting</h3>
@@ -132,6 +132,6 @@ export default function Skills() {
                 </aside>
             </section>
 
-        </>
+        </article>
     );
 }

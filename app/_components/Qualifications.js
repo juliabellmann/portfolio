@@ -1,8 +1,8 @@
 export default function Qualifications() {
     return (
-        <>
-            <h1>Qualifikationen</h1>
+        <article>
             <h2 className="heading-big">Qualifications</h2>
+            <h1>Qualifikationen</h1>
 
             <div className="container-cards">
             <a href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
@@ -30,6 +30,6 @@ export default function Qualifications() {
             </a>
                     
         </div>
-        </>
+        </article>
     );
 }
