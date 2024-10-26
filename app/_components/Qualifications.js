@@ -1,3 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
+import webdesign from "../images/webdesign.JPG"
+import javascript from "../images/javascript.JPG"
+
 export default function Qualifications() {
     return (
         <article>
@@ -5,9 +10,32 @@ export default function Qualifications() {
             <h1>Qualifikationen</h1>
 
             <div className="container-cards">
-            <a href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
-                <h3>Zertifikat Web-Design</h3>
-            </a>
+
+                <Link href="#" className="card">
+                    <div className="image-container">
+                        <span>Zertifikat Web-Designer</span>
+                        <Image 
+                            src={webdesign} 
+                            alt="Zertifikat Web-Designer"
+                            layout="responsive"
+                            objectFit="cover"
+                            className="image"
+                        />
+                    </div>
+                </Link>
+
+                <Link href="#" className="card">
+                    <div className="image-container">
+                        <span>Zertifikat Softwareentwicklerin JavaScript</span>
+                        <Image 
+                            src={javascript} 
+                            alt="Zertifikat Softwareentwicklerin JavaScript"
+                            layout="responsive"
+                            objectFit="cover"
+                            className="image"
+                        />
+                    </div>
+                </Link>
             
             <a href="#" target="_blank" className="card">
                 <h3>Zertifikat Softwareentwicklerin JavaScript</h3>
@@ -23,10 +51,6 @@ export default function Qualifications() {
 
             <a href="#" target="_blank" className="card">
                 <h3>React Udemy</h3>
-            </a>
-
-            <a href="#" target="_blank" className="card">
-                <h3>coming soon</h3>
             </a>
                     
         </div>

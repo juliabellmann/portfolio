@@ -1,3 +1,8 @@
+import Image from "next/image";
+import travellist from "../images/faraway2.JPG"
+import budgetplanner from "../images/budgetplanner.JPG"
+import Link from "next/link";
+
 export default function Projects() {
     return (
         <>
@@ -9,29 +14,49 @@ export default function Projects() {
                 <p>Im folgenden sind Beispielprojekte aufgeführt. Beim Anklicken einer Karte wird sich ein neuer Reiter öffnen, in dem das Projekt betrachtet und ausprobiert werden kann.</p>
 
                 <div className="container-cards">
-                    <a href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
-                        <h3>travel list</h3>
-                    </a>
+
+                    <Link href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
+                        <div className="image-container">
+                            <span>travel list</span>
+                            <Image 
+                                src={travellist} 
+                                alt="Projekt 'Travel-List' "
+                                layout="responsive"
+                                objectFit="cover"
+                                className="image"
+                            />
+                        </div>
+                    </Link>
+
+                    <Link href="https://budget-planner-blond.vercel.app/" target="_blank" className="card">
+                        <div className="image-container">
+                            <span>budget planner</span>
+                            <Image 
+                                src={budgetplanner} 
+                                alt="Projekt 'Budget-Planner' "
+                                layout="responsive"
+                                objectFit="cover"
+                                className="image"
+                            />
+                        </div>
+                    </Link>
                     
-                    <a href="#" target="_blank" className="card">
+           
+                    <Link href="#" target="_blank" className="card">
                         <h3>coming soon</h3>
-                    </a>
+                    </Link>
 
-                    <a href="#" target="_blank" className="card">
+                    <Link href="#" target="_blank" className="card">
                         <h3>coming soon</h3>
-                    </a>
+                    </Link>
 
-                    <a href="#" target="_blank" className="card">
+                    <Link href="#" target="_blank" className="card">
                         <h3>coming soon</h3>
-                    </a>
+                    </Link>
 
-                    <a href="#" target="_blank" className="card">
+                    <Link href="#" target="_blank" className="card">
                         <h3>coming soon</h3>
-                    </a>
-
-                    <a href="#" target="_blank" className="card">
-                        <h3>coming soon</h3>
-                    </a>
+                    </Link>
                             
                 </div>
             </article>
