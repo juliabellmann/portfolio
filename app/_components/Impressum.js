@@ -3,8 +3,9 @@ import Link from "next/link";
 export default function Impressum() {
     return (
         <>
+        <h2 className="heading-big">imprint</h2>
+        <h1>Impressum</h1>
         <div class='impressum'>
-            <h1>Impressum</h1>
             <p>Angaben gemäß § 5 DDG</p>
             <p>Julia Bellmann<br /> 
                 Schwabstr. 109<br /> 

@@ -3,7 +3,7 @@ export default function AboutMe() {
 
         <>
             <div>
-                <h2 className="heading-big">About&nbsp;Me</h2>
+                <h2 className="heading-big">about&nbsp;me</h2>
                 <h1>Über mich</h1> 
             </div>
             <div>

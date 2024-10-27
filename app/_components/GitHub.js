@@ -8,8 +8,6 @@ export default function GitHub() {
             
             <iframe 
                 src="https://github.com/juliabellmann" 
-                width="100%" 
-                height="90%" 
                 loading="lazy"
                 title="Iframe zum GitHub Account"
             />

@@ -10,11 +10,13 @@
   --hintergrund-dunkel: rgba(51, 51, 51, 0.25);
   --akzentfarbe: #005452;
   --akzentfarbe-2: #04212f;
-  --background-section-one: #1a1a1a7f;
+  --background-section-one: hsla(0, 0%, 10%, 0.75);
 
   --color-font: white;
 
   --height-nav-footer: 75px;
+
+  --max-width-page: 1500px;
 }
 
 /* ------- BASE ------- */
@@ -40,49 +42,73 @@ body {
   background-color: var(--hauptfarbe-dunkel);
   color: var(--color-font);
 
+  line-height: 150%;
+
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
 main {
-  /* background-color: green; */
+  /* background-color: rgba(0, 128, 0, 0.297); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-bottom: 5rem;
-  max-width: 900px;
-
-
+  max-width: var(--max-width-page);
+  margin: 5rem 5rem;
 }
 
+/* ------- I FRAME ------- */
 iframe {
-  min-height: 60vh;
-  padding-bottom: 3rem;
+  min-height: 80vh;
+  max-height: 90vh;
+  min-width: 40vw;
+  max-width: var(--max-width-page);
+  padding-bottom: 5rem;
   margin-top: 2rem;
 }
 
-/* -------------- */
+/* ------- FONT SIZES ------- */
 
 h1 {
-  font-size: 3rem;
-  margin: 1rem 0 7rem 0;
+  font-size: 60px;
+  margin: 5rem 0 10rem 0;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 22px;
+  max-width: 900px;
 }
 hr {
   margin: 2rem 0;
 }
-/* -------------- */
+/* ------- SKILLS ------- */
 
 svg {
-  height: 3rem;
+  height: 50px;
   fill: var(--akzentfarbe-2);
 }
 
 .skills {
   display: flex;
   align-items: center;
-  gap: 1rem;
+   gap: 10px; /* zwischen svg und Bezeichnung*/
 }
 
 aside {
+  /* skills */
+  /* background-color: rgb(33, 77, 115); */
   padding: 2rem;
 
   display: flex;
@@ -100,18 +126,14 @@ aside div {
   top: 10rem;
   left: 0;
   right: 0;
-  /* margin: auto; */
+  margin: auto;
   
-  font-size: 7vw;
+  font-size: 6vw;
   color: var(--akzentfarbe-2);
   opacity: 0.5;
   z-index: -1;
   font-weight: bold;
   font-style: italic;
-
-  text-align: center; /* redundant mit main */
-  /* overflow: visible; */
-  /* max-width: 800px; */
 }
 
 /* ------- NAVIGATION ------- */
@@ -120,19 +142,14 @@ nav {
   color: var(--color-font);
 
   height: var(--height-nav-footer);
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around; /* beide div Container ausrichten */
-  align-items: center; /* horizontal zentriert */
-
+  
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: var(--height-nav-footer);
   
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px; /* Padding für Innenabstand */
@@ -140,11 +157,8 @@ nav {
 }
 
 nav ul {
-  list-style: none;
-
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around; /* horizontale Ausrichtung Links im Container */
 }
 
 nav ul a {
@@ -153,14 +167,6 @@ nav ul a {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  align-items: center;
-}
-
-nav ul li {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: nowrap; */
-  align-items: center;
 }
 
 nav svg {
@@ -193,7 +199,7 @@ nav ul a:hover {
 
 /* Maus gedrückt */
 nav ul a:active {
-  color: red;
+  color: var(--akzentfarbe-2);
 }
 
 /* ------- PROJECTS ------- */
@@ -208,15 +214,86 @@ nav ul a:active {
 .card {
   background-color: var(--akzentfarbe-2);
   margin: 1rem;
-  padding: 1rem;
+  padding: 0 1rem;
 
   /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
   width: 25%;
 
+  height: 35vh; /* Passen Sie die Höhe nach Bedarf an */
+  /* overflow: hidden; */
+
   /* Text in Card zentrieren */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-heading {
+  padding-top: 1rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding-bottom: 1rem;
+}
+/* -------  ------- */
+
+.image-container {
+  position: relative;
+  /* overflow: hidden; */
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  height: 20vh;
+  width: 20vh;
+  padding-bottom: 1rem;
+}
+
+.image-container:hover .image {
+  filter: grayscale(0);
+}
+
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+
+.caption {
+  /* position: absolute; */
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+  z-index: 1;
 }
 
 /* ------- FOOTER ------- */
@@ -248,40 +325,67 @@ footer div {
 }
 
 
-/* -------  ------- */
 
 
-.image-container {
+/* ------- GRID -------
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.image-container:hover {
+.card:hover {
   transform: scale(1.05);
+  filter: brightness(150%) saturate(100%);
 }
 
-.image {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.image-container:hover .image {
-  filter: grayscale(0);
-}
-
-.overlay-text {
-  position: absolute;
+.popup {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 18px;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: visibility 0s, opacity 0.3s ease-out;
 }
 
-.image-container:hover .overlay-text {
+.popup.show {
+  visibility: visible;
   opacity: 1;
 }
+
+.popup img {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
+}
+
+.close-button:hover {
+  color: red;
+} */

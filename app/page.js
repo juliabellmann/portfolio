@@ -5,14 +5,13 @@ import GitHub from "./_components/GitHub";
 import Skills from "./_components/Skills";
 import Home from "./_components/Home";
 
-
 export default function HomePage() {
     return (
         <>
         <Home></Home>
         <AboutMe />
-        <Qualifications />
         <Skills />
+        <Qualifications />
         <Projects />
         <GitHub></GitHub>
         </>
