@@ -1,6 +1,6 @@
 export default function GitHub() {
     return (
-        <article>
+        <>
             <h2 className="heading-big">GitHub</h2>
             <h1>GitHub</h1> 
 
@@ -13,6 +13,6 @@ export default function GitHub() {
                 loading="lazy"
                 title="Iframe zum GitHub Account"
             />
-        </article>
+        </>
     );
 }

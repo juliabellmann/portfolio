@@ -1,9 +1,9 @@
 export default function AboutMe() {
     return (
 
-        <article>
+        <>
             <div>
-                <h2 className="heading-big">About Me</h2>
+                <h2 className="heading-big">About&nbsp;Me</h2>
                 <h1>Über mich</h1> 
             </div>
             <div>
@@ -11,7 +11,7 @@ export default function AboutMe() {
                 <hr></hr>
                 <p>The passion for coding and understanding how programs work has been evident in me since very early on. Through my intuitive grasp of programs and programming languages, it&apos;s easy for me to quickly understand their syntax and logic.</p>
             </div>
-        </article>
+        </>
     );
 
 }

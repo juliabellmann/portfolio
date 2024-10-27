@@ -5,7 +5,7 @@ import javascript from "../images/javascript.JPG"
 
 export default function Qualifications() {
     return (
-        <article>
+        <>
             <h2 className="heading-big">Qualifications</h2>
             <h1>Qualifikationen</h1>
 
@@ -54,6 +54,6 @@ export default function Qualifications() {
             </a>
                     
         </div>
-        </article>
+        </>
     );
 }

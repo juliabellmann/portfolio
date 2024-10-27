@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <article>
+        <>
             <h2 className="heading-big">Skills</h2>
             <h1>Fertigkeiten</h1> 
 
@@ -132,6 +132,6 @@ export default function Skills() {
                 </aside>
             </section>
 
-        </article>
+        </>
     );
 }

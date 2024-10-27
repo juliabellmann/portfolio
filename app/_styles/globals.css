@@ -38,21 +38,20 @@ article, aside, figcaption, figure, footer, header, main, nav, section {
 
 body { 
   background-color: var(--hauptfarbe-dunkel);
+  color: var(--color-font);
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 main {
-  margin: 0 10rem;
-
-  color: var(--color-font);
-  /* position: sticky;
-  top: var(--height-nav-footer);
-  bottom: var(--height-nav-footer); */
-  height: 70vh;
+  /* background-color: green; */
   text-align: center;
-}
-
-article {
   padding-bottom: 5rem;
+  max-width: 900px;
+
+
 }
 
 iframe {
@@ -105,13 +104,14 @@ aside div {
   
   font-size: 7vw;
   color: var(--akzentfarbe-2);
-  opacity: 0.25;
+  opacity: 0.5;
   z-index: -1;
   font-weight: bold;
   font-style: italic;
 
   text-align: center; /* redundant mit main */
-
+  /* overflow: visible; */
+  /* max-width: 800px; */
 }
 
 /* ------- NAVIGATION ------- */

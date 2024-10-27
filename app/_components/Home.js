@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <article>
+        <>
             <div>
                 <h1 className="mt-20 pt-10">Julia Bellmann</h1>
                 <h2>Web-Developer | Softwarentwicklerin JavaScript | soon: Web-Designer</h2>
@@ -17,6 +17,6 @@ export default function Home() {
             <p>If you spot any glitches 🐞, please set them free — they just need a little space to debug!</p>
             <hr></hr>
 
-        </article>
+        </>
     );
 }

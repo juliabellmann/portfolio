@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
 
@@ -5,14 +7,14 @@ export default function Footer() {
         <footer>
             <div>
                 <div>
-                    Impressum
+                <Link href="/impressum">Impressum</Link>
                 </div>
                 <div>
                     Kontakt
                 </div>
             </div>
             <div>
-                copyright by jb
+                created wit heart by jb
             </div>
         </footer>
         </>
