@@ -184,7 +184,7 @@ aside div {
   
   font-size: 7vw;
   color: var(--akzentfarbe);
-  opacity: 0.5;
+  opacity: 0.9;
   z-index: -1;
   font-weight: bold;
   font-style: italic;
@@ -200,7 +200,7 @@ aside div {
     
     font-size: 6vw;
     color: var(--akzentfarbe);
-    opacity: 0.5;
+    opacity: 0.75;
     z-index: -1;
     font-weight: bold;
     font-style: italic;
