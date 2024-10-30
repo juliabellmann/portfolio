@@ -217,15 +217,8 @@ nav {
   background-color: var(--background-section-one);
   color: var(--color-font);
   
-  /* height: var(--height-nav-footer); */
   }  
 
-.nav-big {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
   /* display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
