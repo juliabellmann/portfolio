@@ -39,10 +39,15 @@ body {
   background-color: var(--hauptfarbe-dunkel);
   color: var(--color-font);
 
-  line-height: 150%;
+  line-height: 1.5;
 
   /* display: flex;
   justify-content: center; */
+}
+
+::selection {
+  background-color: rgba(128, 128, 128, 0.775);
+  color: var(--akzentfarbe);
 }
 
 main {
@@ -56,7 +61,7 @@ main {
 
 @media (min-width: 1024px) {
   main {
-    margin: 5rem 5rem;
+    margin: 0 5rem;
   }
 }
 
@@ -73,7 +78,7 @@ iframe {
   iframe {
     min-height: 80vh;
     max-height: 90vh;
-    min-width: 40vw;
+    min-width: 65vw;
     max-width: 90vw;
     padding-bottom: 5rem;
     margin-top: 2rem;
@@ -190,7 +195,7 @@ aside div {
 @media (min-width: 1024px) {
   .heading-big {
     position: relative; 
-    top: 10rem;
+    top: 15rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -203,6 +208,7 @@ aside div {
     font-style: italic;
   }
 }
+
 /* ------- NAVIGATION ------- */
 nav svg {
  height: 1.5rem;
@@ -219,57 +225,7 @@ nav {
   
   }  
 
-  /* display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px; 
-  transition: background-color 0.3s ease;  */
-
-  
-  /* 
-nav ul {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-nav ul a {
-  text-decoration: none;
-  margin: 0 2rem;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-*/
-
-/*
-nav ul a:link {
-  color: grey;
-}
-
-
-nav ul a:visited {
-  color: grey;
-}
-
-
-nav ul a:focus {
-  color: grey;
-  border: 1px grey dotted;
-}
-
-
-nav ul a:hover {
-  color: var(--color-font);
-  text-decoration: underline;
-}
-
-nav ul a:active {
-  color: var(--akzentfarbe);
-} */
-
 /* ------- PROJECTS ------- */
-
 .container-cards {
   display: flex;
   flex-direction: column;
@@ -309,9 +265,7 @@ nav ul a:active {
     /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
     width: 25%;
 
-    height: 35vh; /* Passen Sie die Höhe nach Bedarf an */
-    /* overflow: hidden; */
-
+    height: 35vh;
     /* Text in Card zentrieren */
     display: flex;
     flex-direction: column;
@@ -321,6 +275,8 @@ nav ul a:active {
 }
 
 .card-heading {
+  font-size: 1.5vw;
+  font-weight: bold;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -335,7 +291,7 @@ nav ul a:active {
 span {
   padding-bottom: 1rem;
 }
-/* -------  ------- */
+/* ------- IMAGE CONTAINER QUALIFICATIONS ------- */
 
 .image-container {
   position: relative;
@@ -385,8 +341,7 @@ span {
   filter: grayscale(0);
 }
 
-
-.overlay-text {
+/* .overlay-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -400,17 +355,17 @@ span {
 
 .image-container:hover .overlay-text {
   opacity: 1;
-}
+} */
 
 
-.caption {
-  /* position: absolute; */
+/* .caption {
+  position: absolute;
   bottom: 10px;
   left: 10px;
   color: white;
   font-size: 14px;
   z-index: 1;
-}
+} */
 
 /* ------- FOOTER ------- */
 

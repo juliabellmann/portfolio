@@ -7,7 +7,12 @@ export default function Home() {
             <div>
                 <h2>Web-Developer | Softwarentwicklerin JavaScript | soon: Web-Designer</h2>
             </div>
-            <hr></hr>
+            <div>
+
+            {/* <hr></hr> */}
+            <br></br>
+            <br></br>
+            <br></br>
             <h3>Moin Moin</h3>
             <br></br>
             <p>Herzlich Willkommen auf meiner Portfolio-Webseite.</p>
@@ -17,7 +22,8 @@ export default function Home() {
             <p><em>In the coming weeks, I will gradually upload more of my projects here.</em></p>
             <hr></hr>
             <p>If you spot any glitches 🐞, please set them free — they just need a little space to debug!</p>
-            <hr></hr>
+            {/* <hr></hr> */}
+            </div>
 
         </>
     );
