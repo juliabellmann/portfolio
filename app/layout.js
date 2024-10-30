@@ -14,6 +14,8 @@ const googlefontheading = Anonymous_Pro({
 // ----- FONT AWSOME -----
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import NavigationNew from "./_components/NavigationNew";
+import Navbar from "./_components/Navbar";
 
 config.autoAddCss = false;
 
@@ -42,7 +44,7 @@ export default function RootLayout({children}) {
         <html lang="de">
         <body className={`${googlefontheading.className}`}>
             <header>
-            <Navigation />
+                <Navbar />
             </header>
 
             <main>

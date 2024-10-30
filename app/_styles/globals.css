@@ -14,8 +14,6 @@
   --color-font: white;
 
   --height-nav-footer: 75px;
-
-  --max-width-page: 1500px;
 }
 
 /* ------- BASE ------- */
@@ -43,8 +41,8 @@ body {
 
   line-height: 150%;
 
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 main {
@@ -53,7 +51,6 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: var(--max-width-page);
   margin: 1rem 1rem;
 }
 
@@ -207,25 +204,37 @@ aside div {
   }
 }
 /* ------- NAVIGATION ------- */
+nav svg {
+ height: 1.5rem;
+ fill: grey;
+ padding-right: 0.5rem;
+} 
+
+.nav-icon {
+ display: flex;
+}
 nav {
   background-color: var(--background-section-one);
   color: var(--color-font);
-
-  height: var(--height-nav-footer);
   
+  /* height: var(--height-nav-footer); */
+  }  
+
+.nav-big {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  
-  display: flex;
+}
+  /* display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Padding für Innenabstand */
-  transition: background-color 0.3s ease; /* Transition-Effekt für die Hintergrundfarbe */
-}
+  padding: 0 20px; 
+  transition: background-color 0.3s ease;  */
 
+  
+  /* 
 nav ul {
   display: flex;
   flex-wrap: nowrap;
@@ -238,39 +247,33 @@ nav ul a {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+*/
 
-nav svg {
-  height: 1.5rem;
-  fill: grey;
-  padding-right: 0.5rem;
-}
-
-/* noch nicht besuchte Seite */
+/*
 nav ul a:link {
   color: grey;
 }
 
-/* bereits besucht */
+
 nav ul a:visited {
   color: grey;
 }
 
-/* mit Tab fokussiert */
+
 nav ul a:focus {
   color: grey;
   border: 1px grey dotted;
 }
 
-/* Maus darüber */
+
 nav ul a:hover {
   color: var(--color-font);
   text-decoration: underline;
 }
 
-/* Maus gedrückt */
 nav ul a:active {
   color: var(--akzentfarbe);
-}
+} */
 
 /* ------- PROJECTS ------- */
 
