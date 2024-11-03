@@ -8,7 +8,7 @@
   --hauptfarbe-hell: rgb(255, 255, 255);
   --hauptfarbe-dunkel: #000000;
   --hintergrund-dunkel: rgba(51, 51, 51, 0.25);
-  --akzentfarbe: rgb(4, 33, 47);
+  --akzentfarbe: #04212f;
   --background-section-one: hsla(0, 0%, 10%, 0.75);
 
   --color-font: white;
@@ -20,7 +20,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
 
 }
 
@@ -356,32 +356,6 @@ span {
 .image-container:hover .image {
   filter: grayscale(0);
 }
-
-/* .overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover .overlay-text {
-  opacity: 1;
-} */
-
-
-/* .caption {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  font-size: 14px;
-  z-index: 1;
-} */
 
 /* ------- FOOTER ------- */
 

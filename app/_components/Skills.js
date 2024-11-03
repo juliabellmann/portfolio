@@ -157,10 +157,15 @@ export default function Skills() {
 
                 <aside>
 
-                    <h4>REACT&nbsp;API</h4><h4>&nbsp;&bull;&nbsp;</h4>
-                    <h4>UX/UI</h4><h4>&nbsp;&bull;&nbsp;</h4>
-                    <h4>Responsive&nbsp;Web-Design</h4><h4>&nbsp;&bull;&nbsp;</h4>
+                    <h4>REACT&nbsp;API</h4>
+                    <h4>&nbsp;&bull;&nbsp;</h4>
+                    <h4>UX/UI</h4>
+                    <h4>&nbsp;&bull;&nbsp;</h4>
+                    <h4>Responsive&nbsp;Web-Design</h4>
+                    <h4>&nbsp;&bull;&nbsp;</h4>
                     <h4>Accessibility</h4>
+                    <h4>&nbsp;&bull;&nbsp;</h4>
+                    <h4>SEO</h4>
 
                 </aside>
             </section>
