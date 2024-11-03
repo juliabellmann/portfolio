@@ -45,7 +45,7 @@ export default function Projects() {
                 </Link>
                 
         
-                <Link href="#" target="_blank" className="card">
+                <div  className="card">
                     <h4 className="card-heading">swearing plant</h4>
                     <div className="image-container">
                         <Image 
@@ -58,7 +58,7 @@ export default function Projects() {
                         />
                     </div>
                         <span>created with Arduino</span>
-                </Link>
+                </div>
 
                 <Link href="#" target="_blank" className="card">
                     <h4>coming soon</h4>

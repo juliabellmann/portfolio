@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function GitHub() {
     return (
         <>
             <h2 className="heading-big">GitHub</h2>
             <h1>GitHub</h1> 
 
-            <a href="https://github.com/juliabellmann" target="_blank" className="link-github">➡ hier geht es zum GitHub-Profil</a>
+            <Link href="https://github.com/juliabellmann" target="_blank" className="link-github"><h3>➡ hier geht es zum GitHub-Profil</h3></Link>
             
             <iframe 
                 src="https://github.com/juliabellmann" 
