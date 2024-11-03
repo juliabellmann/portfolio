@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <div><Link href="/">DevFolio</Link></div>
+                            <div><Link href="/"><strong>DevFolio</strong></Link></div>
                         </div>
                     </div>
                     <div className="hidden md:block">
@@ -31,13 +31,13 @@ export default function Navbar() {
                                 href="/aboutme"
                                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
                             >
-                                About&nbsp;me
+                                Über&nbsp;mich
                             </Link>
                             <Link 
                                 href="/skills"
                                 className="text-white hover:bg-white hover:text-black rounded-lg p-2"
                             >
-                                Skills
+                                Fähigkeiten
                             </Link>
                             <Link 
                                 href="/qualifications"
@@ -110,13 +110,13 @@ export default function Navbar() {
                             href="/aboutme"
                             className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
                         >
-                            About&nbsp;me
+                            Über&nbsp;mich
                         </Link>
                         <Link 
                             href="/skills"
                             className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
                         >
-                            Skills
+                            Fähigkeiten
                         </Link>
                         <Link 
                             href="/qualifications"

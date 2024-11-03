@@ -22,7 +22,7 @@ export default function Projects() {
                             alt="Projekt 'Travel-List' "
                             fill
                             sizes="(max-width: 768px) 100vw, 33vw"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                             className="image"
                         />
                     </div>
@@ -37,7 +37,7 @@ export default function Projects() {
                             alt="Projekt 'Budget-Planner' "
                             fill
                             sizes="(max-width: 768px) 100vw, 33vw"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                             className="image"
                         />
                     </div>
@@ -53,7 +53,7 @@ export default function Projects() {
                             alt="Projekt 'Budget-Planner' "
                             fill
                             sizes="(max-width: 768px) 100vw, 33vw"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                             className="image"
                         />
                     </div>
