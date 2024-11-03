@@ -10,11 +10,11 @@ export default function Footer() {
                 <Link href="/impressum">Impressum</Link>
                 </div>
                 <div>
-                    Kontakt
+                <Link href="/contact">Kontakt</Link>
                 </div>
             </div>
             <div>
-                created wit heart by jb
+                created wit next.js & &#10084; by jb
             </div>
         </footer>
         </>
