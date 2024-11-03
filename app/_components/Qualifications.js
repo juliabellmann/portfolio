@@ -30,7 +30,7 @@ export default function Qualifications() {
                             alt="Zertifikat Web-Designer"
                             fill
                             sizes="(max-width: 768px) 100vw, 33vw"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                             className="image"
                         />
                     </div>
