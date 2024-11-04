@@ -4,14 +4,26 @@
 /* -------------- */
 
 /* Variablen Farben etc */
-:root {
-  --hauptfarbe-hell: rgb(255, 255, 255);
-  --hauptfarbe-dunkel: #000000;
-  --hintergrund-dunkel: rgba(51, 51, 51, 0.25);
+:root.dark {
+  --hauptfarbe: #000000;
   --akzentfarbe: #04212f;
-  --background-section-one: hsla(0, 0%, 10%, 0.75);
-
+  --background-nav-footer: hsla(0, 0%, 10%, 0.75);
+  --nav-svg-fill: grey;
+  --boxshadow: rgb(187, 187, 187);
+  
   --color-font: white;
+  
+  --height-nav-footer: 75px;
+}
+:root {
+  --hauptfarbe: #ffffff;
+  --akzentfarbe: #043f5c;
+  --background-nav-footer: hsla(0, 0%, 10%, 0.5);
+  --nav-svg-fill: var(--akzentfarbe);
+  --boxshadow: rgb(69, 69, 69);
+  --card-text-color: white;
+
+  --color-font: rgb(0, 0, 0);
 
   --height-nav-footer: 75px;
 }
@@ -36,7 +48,7 @@ article, aside, figcaption, figure, footer, header, main, nav, section {
 }
 
 body { 
-  background-color: var(--hauptfarbe-dunkel);
+  background-color: var(--hauptfarbe);
   color: var(--color-font);
 
   line-height: 1.5;
@@ -45,13 +57,13 @@ body {
   justify-content: center; */
 }
 
+/* Farben für Textmarkierungen */
 ::selection {
   background-color: rgba(128, 128, 128, 0.775);
   color: var(--akzentfarbe);
 }
 
 main {
-  /* background-color: rgba(0, 128, 0, 0.297); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +173,6 @@ section h3 {
 
 aside {
   /* skills */
-  /* background-color: rgb(33, 77, 115); */
   padding: 2rem;
 
   display: flex;
@@ -218,7 +229,6 @@ aside div {
 /* ------- NAVIGATION ------- */
 nav svg {
  height: 1.5rem;
- fill: grey;
  padding-right: 0.5rem;
 } 
 
@@ -226,13 +236,19 @@ nav svg {
  display: flex;
 }
 nav {
-  background-color: var(--background-section-one);
+  background-color: var(--background-nav-footer);
   color: var(--color-font);
   
   }  
-
+.nav-mode {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
 /* ------- PROJECTS ------- */
 .container-cards {
+  color: var(--card-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,7 +281,7 @@ nav {
 
   border: 0 solid ;
   border-radius: 20px;
-  box-shadow: 2.5px 5px 5px rgba(255, 255, 255, 0.25);
+  box-shadow: 2.5px 5px 5px var(--boxshadow);
 }
 
 @media (min-width: 1024px) {
@@ -360,8 +376,8 @@ span {
 /* ------- FOOTER ------- */
 
 footer {
-  background-color: var(--background-section-one);
-  color: white;
+  background-color: var(--background-nav-footer);
+  color: var(--color-font);
 
   height: var(--height-nav-footer);
 
@@ -407,4 +423,27 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+
+/* .dark body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.light body {
+  background-color: #f9f9f9;
+  color: black;
+} */
+
+.to-dark-mode {
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+
+
+.to-light-mode {
+  height: 40px;
+  width: 40px;
+  fill: var(--color-font);
 }
