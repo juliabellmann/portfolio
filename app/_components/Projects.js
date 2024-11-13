@@ -10,7 +10,7 @@ export default function Projects() {
             <h2 className="heading-big">projects</h2>
             <h1>Übersicht der Projekte</h1>
 
-            <p>Im folgenden sind Beispielprojekte aufgeführt. Beim Anklicken einer Karte wird sich ein neuer Reiter öffnen, in dem das Projekt betrachtet und ausprobiert werden kann.</p>
+            <p className="mb-10">Im folgenden sind Beispielprojekte aufgeführt. Beim Anklicken einer Karte wird sich ein neuer Reiter öffnen, in dem das Projekt betrachtet und ausprobiert werden kann.</p>
 
             <div className="container-cards">
 
@@ -57,7 +57,8 @@ export default function Projects() {
                             className="image"
                         />
                     </div>
-                        <span>created with Arduino</span>
+                    <span>created with Arduino</span>
+                    <span className="card-txt">dieses Projekt ist leider nicht ohne Arduino Teile zu testen </span>
                 </div>
 
                 <Link href="#" target="_blank" className="card">

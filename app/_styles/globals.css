@@ -254,8 +254,19 @@ nav {
   align-items: center;
   width: 90%;
 
+  position: relative;
+
 }
 
+.card-txt {
+  position: absolute;
+  color: red;
+  /* rotate: -45deg; */
+  margin-top: 7rem;
+  font-size: 1.8rem;
+  width: 250px ;
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
 
 @media (min-width: 1024px) {
   .container-cards {
@@ -264,6 +275,12 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .card-txt {
+    position: absolute;
+    font-size: 1.7vw;
+    width: 15vw;
+    background-color: hsla(0, 0%, 100%, 0.5);
   }
 }
 
@@ -379,7 +396,7 @@ footer {
   background-color: var(--background-nav-footer);
   color: var(--color-font);
 
-  height: var(--height-nav-footer);
+  height: calc(var(--height-nav-footer) + 30px);
 
   position: fixed;
   bottom: 0;
