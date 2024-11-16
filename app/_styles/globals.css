@@ -6,7 +6,7 @@
 /* Variablen Farben etc */
 :root.dark {
   --hauptfarbe: #000000;
-  --akzentfarbe: #04212f;
+  --akzentfarbe: #0b5174;
   --background-nav-footer: hsla(0, 0%, 10%, 0.75);
   --nav-svg-fill: grey;
   --boxshadow: rgb(187, 187, 187);
@@ -17,7 +17,7 @@
 }
 :root {
   --hauptfarbe: #ffffff;
-  --akzentfarbe: #043f5c;
+  --akzentfarbe: #06354d;
   --background-nav-footer: hsla(0, 0%, 10%, 0.5);
   --nav-svg-fill: var(--akzentfarbe);
   --boxshadow: rgb(69, 69, 69);

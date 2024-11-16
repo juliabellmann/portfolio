@@ -2,6 +2,7 @@ import Image from "next/image";
 import travellist from "../images/faraway2.JPG"
 import budgetplanner from "../images/budgetplanner.JPG"
 import swearingplant from "../images/swearingplant.JPG"
+import workflowwizzard from "../images/workflow-wizzard.jpeg"
 import Link from "next/link";
 
 export default function Projects() {
@@ -44,7 +45,6 @@ export default function Projects() {
                     <span>created with JS</span>
                 </Link>
                 
-        
                 <div  className="card">
                     <h4 className="card-heading">swearing plant</h4>
                     <div className="image-container">
@@ -61,15 +61,29 @@ export default function Projects() {
                     <span className="card-txt">dieses Projekt ist leider nicht ohne Arduino Teile zu testen </span>
                 </div>
 
+                <Link href="https://the-workflow-wizard.vercel.app/" target="_blank" className="card">
+                    <h4 className="card-heading">workflow wizzard</h4>
+                    <div className="image-container">
+                        <Image 
+                            src={workflowwizzard} 
+                            alt="Projekt 'Workflow Wizzard' "
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            style={{ objectFit: 'contain' }}
+                            className="image"
+                        />
+                    </div>
+                    <span>created with JS</span>
+                    <span className="card-txt"> Work in Progress </span>
+                </Link>
+
                 <Link href="#" target="_blank" className="card">
+                    <h4>Web-Shop</h4>
                     <h4>coming soon</h4>
                 </Link>
 
                 <Link href="#" target="_blank" className="card">
-                    <h4>coming soon</h4>
-                </Link>
-
-                <Link href="#" target="_blank" className="card">
+                    <h4></h4>
                     <h4>coming soon</h4>
                 </Link>
                         
