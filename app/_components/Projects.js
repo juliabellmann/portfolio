@@ -1,5 +1,6 @@
 import Image from "next/image";
 import travellist from "../images/faraway2.JPG"
+import wildoasis from "../images/wildoasis.JPG"
 import budgetplanner from "../images/budgetplanner.JPG"
 import swearingplant from "../images/swearingplant.JPG"
 import workflowwizzard from "../images/workflow-wizzard.jpeg"
@@ -15,6 +16,22 @@ export default function Projects() {
 
             <div className="container-cards">
 
+                <Link href="https://wild-oasis-booking-demo.vercel.app/" target="_blank" className="card">
+                    <h4 className="card-heading">The Wild Oasis</h4>
+                    {/* <span className="card-heading">Booking-Site-Demo</span> */}
+                    <div className="image-container">
+                        <Image 
+                            src={wildoasis} 
+                            alt="Projekt 'The Wild Oasis - Booking-Demo' "
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            style={{ objectFit: 'contain' }}
+                            className="image"
+                        />
+                    </div>
+                        <span>created with Next.js & Supabase</span>
+                </Link>
+                
                 <Link href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
                     <h4 className="card-heading">travel list</h4>
                     <div className="image-container">
@@ -79,11 +96,6 @@ export default function Projects() {
 
                 <Link href="#" target="_blank" className="card">
                     <h4>Web-Shop</h4>
-                    <h4>coming soon</h4>
-                </Link>
-
-                <Link href="#" target="_blank" className="card">
-                    <h4></h4>
                     <h4>coming soon</h4>
                 </Link>
                         
