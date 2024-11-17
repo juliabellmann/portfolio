@@ -16,7 +16,7 @@
   --height-nav-footer: 75px;
 }
 :root {
-  --hauptfarbe: #ffffff;
+  --hauptfarbe: #f4f4f4;
   --akzentfarbe: #06354d;
   --background-nav-footer: hsla(0, 0%, 10%, 0.5);
   --nav-svg-fill: var(--akzentfarbe);

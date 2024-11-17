@@ -2,6 +2,7 @@ import Image from "next/image";
 import travellist from "../images/faraway2.JPG"
 import wildoasis from "../images/wildoasis.JPG"
 import budgetplanner from "../images/budgetplanner.JPG"
+import leaflogger from "../images/leaflogger.JPG"
 import swearingplant from "../images/swearingplant.JPG"
 import workflowwizzard from "../images/workflow-wizzard.jpeg"
 import Link from "next/link";
@@ -29,7 +30,7 @@ export default function Projects() {
                             className="image"
                         />
                     </div>
-                        <span>created with Next.js & Supabase</span>
+                        <span>created with Next.js, app-router & Supabase</span>
                 </Link>
                 
                 <Link href="https://travel-list-orpin.vercel.app/" target="_blank" className="card">
@@ -61,6 +62,21 @@ export default function Projects() {
                     </div>
                     <span>created with JS</span>
                 </Link>
+
+                <Link href="https://leaf-logger-jb.vercel.app/" target="_blank" className="card">
+                    <h4 className="card-heading">leaf logger</h4>
+                    <div className="image-container">
+                        <Image 
+                            src={leaflogger} 
+                            alt="Projekt 'Leaf-Logger' "
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            style={{ objectFit: 'contain' }}
+                            className="image"
+                        />
+                    </div>
+                    <span>created with next.js & pages router</span>
+                </Link>
                 
                 <div  className="card">
                     <h4 className="card-heading">swearing plant</h4>
@@ -90,7 +106,7 @@ export default function Projects() {
                             className="image"
                         />
                     </div>
-                    <span>created with JS</span>
+                    <span>created with next.js & pages router</span>
                     <span className="card-txt"> Work in Progress </span>
                 </Link>
 
@@ -98,7 +114,13 @@ export default function Projects() {
                     <h4>Web-Shop</h4>
                     <h4>coming soon</h4>
                 </Link>
-                        
+                <Link href="#" target="_blank" className="card">
+                    <h4>coming soon</h4>
+                </Link>
+                <Link href="#" target="_blank" className="card">
+                    <h4>coming soon</h4>
+                </Link>
+                       
             </div>
         </>
     );
