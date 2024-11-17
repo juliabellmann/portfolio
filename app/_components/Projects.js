@@ -5,6 +5,7 @@ import budgetplanner from "../images/budgetplanner.JPG"
 import leaflogger from "../images/leaflogger.JPG"
 import swearingplant from "../images/swearingplant.JPG"
 import workflowwizzard from "../images/workflow-wizzard.jpeg"
+import usepopcorn from "../images/usepopcorn.JPG"
 import Link from "next/link";
 
 export default function Projects() {
@@ -109,14 +110,26 @@ export default function Projects() {
                     <span>created with next.js & pages router</span>
                     <span className="card-txt"> Work in Progress </span>
                 </Link>
+                <Link href="https://use-popcorn-app-nine.vercel.app/" target="_blank" className="card">
+                    <h4 className="card-heading">usePopcorn</h4>
+                    <div className="image-container">
+                        <Image 
+                            src={usepopcorn} 
+                            alt="Projekt 'usePopcorn' "
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            style={{ objectFit: 'contain' }}
+                            className="image"
+                        />
+                    </div>
+                    <span>created with react</span>
+                </Link>
 
                 <Link href="#" target="_blank" className="card">
                     <h4>Web-Shop</h4>
                     <h4>coming soon</h4>
                 </Link>
-                <Link href="#" target="_blank" className="card">
-                    <h4>coming soon</h4>
-                </Link>
+
                 <Link href="#" target="_blank" className="card">
                     <h4>coming soon</h4>
                 </Link>
