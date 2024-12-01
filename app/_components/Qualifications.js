@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import webdesign from "../images/webdesign.JPG"
+import webdev from "../images/neuefische.JPG"
 import javascript from "../images/javascript.JPG"
 import udemy_js from "../images/udemy_js.jpg"
 import udemy_react from "../images/udemy_react.jpg"
@@ -15,9 +16,16 @@ export default function Qualifications() {
             <div className="container-cards">
 
                 <Link href="#" className="card">
-                    <h4 className="card-heading">coming soon: Web&nbsp;-&nbsp;Developer</h4>
+                    <h4 className="card-heading">Web&nbsp;-&nbsp;Developer</h4>
                     <div className="image-container">
-                        # soon #
+                    <Image 
+                            src={webdev} 
+                            alt="Zertifikat Web-Developer"
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            style={{ objectFit: 'contain' }}
+                            className="image"
+                        />
                     </div>
                     <span>-</span>
                 </Link>

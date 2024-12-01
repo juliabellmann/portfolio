@@ -4,8 +4,13 @@ export default function Home() {
             <h2 className="heading-big">Bellmann</h2>
             <h1>Julia Bellmann</h1>
             
-            <div>
-                <h2>Web-Developer | Softwarentwicklerin JavaScript | soon: Web-Designer</h2>
+            <div className="home-heading">
+                <h2>
+                    <span className="nobreak">Web-Developer </span>
+                    <span className="accentcolor">|</span> Softwarentwicklerin&nbsp;JavaScript <span className="nobreak">
+                        <span className="accentcolor">|</span> Web-Designer
+                    </span>
+                </h2>
             </div>
             <div>
 

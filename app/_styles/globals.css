@@ -17,7 +17,7 @@
 }
 :root {
   --hauptfarbe: #f4f4f4;
-  --akzentfarbe: #06354d;
+  --akzentfarbe: #0b5174;
   --background-nav-footer: hsla(0, 0%, 10%, 0.5);
   --nav-svg-fill: var(--akzentfarbe);
   --boxshadow: rgb(69, 69, 69);
@@ -32,8 +32,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Courier New', Courier, monospace; */
-
 }
 
 html {
@@ -53,14 +51,9 @@ body {
 
   line-height: 1.5;
 
-  /* display: flex;
-  justify-content: center; */
-}
-
-/* Farben für Textmarkierungen */
-::selection {
-  background-color: rgba(128, 128, 128, 0.775);
-  color: var(--akzentfarbe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -68,16 +61,18 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 1rem 1rem;
-  padding-bottom: 7rem;
+  max-width: 80vw;
+  min-height: calc(100vh - (var(--height-nav-footer)));
+  
+  padding-bottom: 5vh;
 }
 
-@media (min-width: 1024px) {
-  main {
-    margin: 0 5rem;
-  }
-}
 
+/* Farben für Textmarkierungen */
+::selection {
+  background-color: rgba(201, 199, 199, 0.75);
+  color: var(--akzentfarbe);
+}
 /* ------- I FRAME ------- */
 iframe {
   min-height: 70vh;
@@ -115,6 +110,7 @@ h3 {
 }
 h4 {
   font-size: 20px;
+  font-weight: lighter;
 }
 
 p {
@@ -123,6 +119,7 @@ p {
 }
 hr {
   margin: 2rem 0;
+  color: var(--akzentfarbe);
 }
 
 @media (min-width: 1024px) {
@@ -148,6 +145,8 @@ hr {
   }
   hr {
     margin: 2rem 0;
+    border: 3px solid var(--akzentfarbe);
+    /* background-color:#aa0000;height:15px; */
   }
 
 }
@@ -168,7 +167,11 @@ section h3 {
 .skills {
   display: flex;
   align-items: center;
-   gap: 10px; /* zwischen svg und Bezeichnung*/
+  border: 0.5px solid var(--akzentfarbe);
+  border-radius: 20px;
+
+  margin: 10px;
+   gap: 15px; /* zwischen svg und Bezeichnung*/
 }
 
 aside {
@@ -184,6 +187,8 @@ aside {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
+    max-width: 65vw;
   }
 }
 
@@ -279,7 +284,6 @@ nav {
   .card-txt {
     position: absolute;
     font-size: 1.7vw;
-    width: 15vw;
     background-color: hsla(0, 0%, 100%, 0.5);
   }
 }
@@ -298,7 +302,8 @@ nav {
 
   border: 0 solid ;
   border-radius: 20px;
-  box-shadow: 2.5px 5px 5px var(--boxshadow);
+  box-shadow: 2px 5px 0 var(--boxshadow);
+
 }
 
 @media (min-width: 1024px) {
@@ -307,7 +312,7 @@ nav {
     padding: 0 1rem;
 
     /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
-    width: 25%;
+    width: 28%;
 
     height: 35vh;
     /* Text in Card zentrieren */
@@ -393,20 +398,19 @@ span {
 /* ------- FOOTER ------- */
 
 footer {
-  background-color: var(--background-nav-footer);
-  color: var(--color-font);
-
-  height: calc(var(--height-nav-footer) + 30px);
-
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  /* position: fixed;
+  bottom: 0;*/
+  width: 100%; 
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
+  background-color: var(--background-nav-footer);
+  color: var(--color-font);
+
+  height: calc(var(--height-nav-footer) + 30px);
 }
 
 footer div {
@@ -442,25 +446,22 @@ flex-direction: column;
   padding: 2rem;
 }
 
-/* .dark body {
-  background-color: #1a1a1a;
-  color: white;
-}
-
-.light body {
-  background-color: #f9f9f9;
-  color: black;
-} */
-
 .to-dark-mode {
   height: 40px;
   width: 40px;
   fill: white;
 }
 
-
 .to-light-mode {
   height: 40px;
   width: 40px;
   fill: var(--color-font);
+}
+
+.accentcolor {
+  color: var(--akzentfarbe);
+}
+
+.nobreak {
+    white-space: nowrap;
 }
