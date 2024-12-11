@@ -13,9 +13,9 @@ export default function Footer() {
                 <Link href="/contact" className=" hover:bg-white hover:text-black rounded-lg p-2">Kontakt</Link>
                 </div>
             </div>
-            <div>
-                created wit next.js & &#10084; by jb
-            </div>
+            <p>
+                created wit next.js & <span>&#10084;</span> by jb
+            </p>
         </footer>
         </>
     );

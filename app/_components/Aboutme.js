@@ -1,6 +1,5 @@
 export default function AboutMe() {
     return (
-
         <>
             <div>
                 <h2 className="heading-big">about&nbsp;me</h2>
@@ -13,5 +12,4 @@ export default function AboutMe() {
             </div>
         </>
     );
-
 }

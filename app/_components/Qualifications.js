@@ -60,7 +60,7 @@ export default function Qualifications() {
             
                 <Link href="https://www.udemy.com/certificate/UC-afe78176-09d7-4e00-a5e8-a9b470ae41da/" target="_blank" className="card">
                     <h4 className="card-heading">Udemy - JavaScript</h4>
-                    <div className="image-container udemy-img">
+                    <div className="image-container">
                             <Image 
                                 src={udemy_js} 
                                 alt="udemy - JavaScrpit Bescheinigung"
@@ -74,7 +74,7 @@ export default function Qualifications() {
 
                 <Link href="https://www.udemy.com/certificate/UC-3524b4f9-ecfd-4b06-aaf6-3930e323f882/" target="_blank" className="card">
                 <h4 className="card-heading">Udemy - React, Next.js & co.</h4>
-                    <div className="image-container udemy-img">
+                    <div className="image-container">
                             <Image 
                                 src={udemy_react} 
                                 alt="udemy - React, Next.js und co. - Bescheinigung"
@@ -88,7 +88,7 @@ export default function Qualifications() {
 
                 <Link href="https://www.udemy.com/certificate/UC-f49eee2e-6577-4523-aa09-f83008272956/" target="_blank" className="card">
                 <h4 className="card-heading">Udemy - Full Stack Dev</h4>
-                    <div className="image-container udemy-img">
+                    <div className="image-container">
                             <Image 
                                 src={udemy_fullstack} 
                                 alt="udemy - Full Stack - Bescheinigung"

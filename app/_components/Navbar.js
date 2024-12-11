@@ -23,7 +23,7 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <div className="ml-4 flex items-center space-x-4">
                             <Link 
                                 href="/"
@@ -64,7 +64,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <div className="md:hidden fley items-center">
+                    <div className="lg:hidden fley items-center">
                         <button className="inline-flex items-center justify-center p-2 rounded-md  hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                         onClick={toggleNavbar}>
                             {isClicked ? (
@@ -103,7 +103,7 @@ export default function Navbar() {
                 </div>
             </div>
             {isClicked && (
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
                         <Link 
                             href="/"
@@ -148,4 +148,3 @@ export default function Navbar() {
         </nav>
     );
 }
-

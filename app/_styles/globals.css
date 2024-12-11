@@ -6,8 +6,8 @@
 /* Variablen Farben etc */
 :root.dark {
   --hauptfarbe: #000000;
-  --akzentfarbe: #0b5174;
-  --background-nav-footer: hsla(0, 0%, 10%, 0.75);
+  --akzentfarbe: #477c86;
+  --background-nav-footer: hsla(0, 0%, 10%);
   --nav-svg-fill: grey;
   --boxshadow: rgb(187, 187, 187);
   
@@ -16,9 +16,9 @@
   --height-nav-footer: 75px;
 }
 :root {
-  --hauptfarbe: #f4f4f4;
-  --akzentfarbe: #0b5174;
-  --background-nav-footer: hsla(0, 0%, 10%, 0.5);
+  --hauptfarbe: #fafafa;
+  --akzentfarbe: #477b84;
+  --background-nav-footer: rgb(159, 159, 159);
   --nav-svg-fill: var(--akzentfarbe);
   --boxshadow: rgb(69, 69, 69);
   --card-text-color: white;
@@ -54,6 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  left: 0;
+  right: 0;
 }
 
 main {
@@ -61,7 +63,9 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 80vw;
+  max-width: 70vw;
+
+  /* border: 1px solid red; */
   min-height: calc(100vh - (var(--height-nav-footer)));
   
   padding-bottom: 5vh;
@@ -70,9 +74,31 @@ main {
 
 /* Farben für Textmarkierungen */
 ::selection {
-  background-color: rgba(201, 199, 199, 0.75);
+  background-color: rgb(201, 199, 199);
   color: var(--akzentfarbe);
 }
+
+/* ------- NAVIGATION ------- */
+nav svg {
+  height: 1.5rem;
+  padding-right: 0.5rem;
+ } 
+ 
+ .nav-icon {
+  display: flex;
+ }
+ nav {
+   background-color: var(--background-nav-footer);
+   color: var(--color-font);
+   
+   }  
+ .nav-mode {
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   align-items: center;
+ }
+
 /* ------- I FRAME ------- */
 iframe {
   min-height: 70vh;
@@ -82,15 +108,16 @@ iframe {
   padding-bottom: 5rem;
   margin-top: 2rem;
 }
-@media (min-width: 1024px) {
-  iframe {
-    min-height: 80vh;
-    max-height: 90vh;
-    min-width: 65vw;
-    max-width: 90vw;
-    padding-bottom: 5rem;
-    margin-top: 2rem;
-  }
+
+  @media (min-width: 1024px) {
+    iframe {
+      min-height: 80vh;
+      max-height: 90vh;
+      min-width: 65vw;
+      max-width: 90vw;
+      padding-bottom: 5rem;
+      margin-top: 2rem;
+    }
 }
 
 /* ------- FONT SIZES ------- */
@@ -146,7 +173,6 @@ hr {
   hr {
     margin: 2rem 0;
     border: 3px solid var(--akzentfarbe);
-    /* background-color:#aa0000;height:15px; */
   }
 
 }
@@ -230,34 +256,14 @@ aside div {
     font-style: italic;
   }
 }
-
-/* ------- NAVIGATION ------- */
-nav svg {
- height: 1.5rem;
- padding-right: 0.5rem;
-} 
-
-.nav-icon {
- display: flex;
-}
-nav {
-  background-color: var(--background-nav-footer);
-  color: var(--color-font);
-  
-  }  
-.nav-mode {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  align-items: center;
-}
+np
 /* ------- PROJECTS ------- */
 .container-cards {
   color: var(--card-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  /* width: 90%; */
 
   position: relative;
 
@@ -275,7 +281,6 @@ nav {
 
 @media (min-width: 1024px) {
   .container-cards {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -289,21 +294,20 @@ nav {
 }
 
 .card {
-  background-color: var(--akzentfarbe);
-  margin: 1rem;
-  
-  width: 90%;
-  height: 500px;
-  padding: 10px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  background-color: var(--akzentfarbe);
+  margin: 1rem;
+  
+  width: 70vw;
+  height: 40vw;
+  padding: 10px;
+
   border: 0 solid ;
   border-radius: 20px;
   box-shadow: 2px 5px 0 var(--boxshadow);
-
 }
 
 @media (min-width: 1024px) {
@@ -313,19 +317,18 @@ nav {
 
     /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
     width: 28%;
-
-    height: 35vh;
-    /* Text in Card zentrieren */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 25vw;
   }
+}
+
+.styledprojectlink {
+  width: 15vw;
+  height: 25vw;
 }
 
 .card-heading {
   font-size: 3.5vw;
-  font-weight: bold;
+  font-weight: normal;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -346,15 +349,12 @@ span {
 .image-container {
   position: relative;
   transition: transform 0.3s ease;
-  width: 80%;
-  height: 100%;
+  width: 30vw;
+  height: 30vw;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.udemy-img {
-  max-width: 80%;
 }
 
 @media (min-width: 1024px) {
@@ -362,8 +362,8 @@ span {
     position: relative;
     /* overflow: hidden; */
     transition: transform 0.3s ease;
-    width: 100%;
-    height: 100%;
+    width: 15vw;
+    height: 20vw;
 
     display: flex;
     flex-direction: column;
@@ -398,8 +398,8 @@ span {
 /* ------- FOOTER ------- */
 
 footer {
-  /* position: fixed;
-  bottom: 0;*/
+  /* position: fixed; */
+  bottom: 0;
   width: 100%; 
 
   display: flex;
@@ -416,6 +416,13 @@ footer {
 footer div {
   display: flex;
   gap: 3rem;
+}
+footer p {
+  font-size: 1rem;
+}
+
+footer span {
+  color: var(--akzentfarbe);
 }
 
 .link-github {
@@ -437,7 +444,7 @@ flex-direction: column;
     flex-wrap: nowrap;
     padding: 0 2rem;
     }
-  }
+}
 
 .contact ul{
   display: flex;
@@ -465,3 +472,43 @@ flex-direction: column;
 .nobreak {
     white-space: nowrap;
 }
+
+/* styles/globals.css oder eine separate CSS-Datei */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 500px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-content button {
+  margin-top: 20px;
+}
+

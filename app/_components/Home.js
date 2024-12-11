@@ -7,7 +7,7 @@ export default function Home() {
             <div className="home-heading">
                 <h2>
                     <span className="nobreak">Web-Developer </span>
-                    <span className="accentcolor">|</span> Softwarentwicklerin&nbsp;JavaScript <span className="nobreak">
+                    <span className="accentcolor">|</span> Softwarentwicklerin JavaScript <span className="nobreak">
                         <span className="accentcolor">|</span> Web-Designer
                     </span>
                 </h2>

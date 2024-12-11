@@ -92,7 +92,7 @@ export default function Projects() {
                         />
                     </div>
                     <span>created with Arduino</span>
-                    <span className="card-txt">dieses Projekt ist leider nicht ohne Arduino Teile zu testen </span>
+                    <span className="card-txt">dieses Projekt ist leider nicht ohne Arduino Teile zu testen</span>
                 </div>
 
                 <Link href="https://the-workflow-wizard.vercel.app/" target="_blank" className="card">
@@ -108,8 +108,8 @@ export default function Projects() {
                         />
                     </div>
                     <span>created with next.js & pages router</span>
-                    <span className="card-txt"> Work in Progress </span>
                 </Link>
+                
                 <Link href="https://use-popcorn-app-nine.vercel.app/" target="_blank" className="card">
                     <h4 className="card-heading">usePopcorn</h4>
                     <div className="image-container">
