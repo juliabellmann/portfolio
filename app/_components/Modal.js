@@ -1,33 +1,92 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRef, useEffect, useState } from 'react';
 import styled from "styled-components";
 
 export default function Modal({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
+    const modalRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const handleClose = () => {
-    setIsOpen(false);
-    // router.push('/');
-  };
+    useEffect(() => {
+      function centerModal() {
+        if (modalRef.current && isOpen) {
+          const modalRect = modalRef.current.getBoundingClientRect();
+          const viewportWidth = window.innerWidth;
+          const viewportHeight = window.innerHeight;
+          
+          modalRef.current.style.top = `${(viewportHeight / 2) - (modalRect.height / 2)}px`;
+          modalRef.current.style.left = `${(viewportWidth / 2) - (modalRect.width / 2)}px`;
+        }
+      }
+
+      window.addEventListener('resize', centerModal);
+      return () => window.removeEventListener('resize', centerModal);
+    }, [isOpen]);
+
+    const handleOpenModal = () => {
+      setIsOpen(true);
+      if (modalRef.current) {
+        modalRef.current.showModal();
+      }
+    };
+
+    const handleCloseModal = () => {
+      setIsOpen(false);
+      if (modalRef.current) {
+        modalRef.current.close();
+      }
+    };
 
     return (
         <>
-            <StyledOpenBtn onClick={() => setIsOpen(true)}>More Informations</StyledOpenBtn>
-            {isOpen && (
-                <div className="modal-overlay" onClick={handleClose}>
-                    <div className="modal-content">
-                        {children}
-                        <button onClick={handleClose}>Schließen</button>
-                    </div>
-                </div>
-            )}
+            <StyledOpenBtn onClick={handleOpenModal}>More Informations</StyledOpenBtn>
+
+            <StyledDialog ref={modalRef}>
+                {isOpen && (
+                  <>
+                    {children}
+                    <StyledClosebtn onClick={handleCloseModal}>Close</StyledClosebtn>
+                  </>
+                )}
+            </StyledDialog>
         </>
     )
 }
 
 const StyledOpenBtn = styled.button`
-    background-color: red;
+    background-color: var(--card-text-color);
+    color: var(--akzentfarbe);
+    padding: 10px 20px;
+    border-radius: 15px;
+    `;
+
+const StyledClosebtn = styled.button`
+    background-color: white;
+    color: var(--akzentfarbe);
+    
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+`;
+
+const StyledDialog = styled.dialog`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    z-index: 100;
+
+    margin: auto;
+    /* padding: 30px; */
+
+    background-color: var(--akzentfarbe);
+    color: white;
+
+    border-radius: 30px;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+
+    &::backdrop {
+        background-color: rgba(0,0,0,0.8);
+    }
 `;
