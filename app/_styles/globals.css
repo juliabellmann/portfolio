@@ -26,6 +26,27 @@
   --color-font: rgb(0, 0, 0);
 
   --height-nav-footer: 75px;
+
+  --font-inter: var(--font-inter);
+  --font-roboto-mono: var(--font-roboto-mono);
+  --font-montserrat: var(--font-montserrat);
+  --font-josefin-sans: var(--font-josefin-sans);
+  --font-monoton: var(--font-monoton);
+  --font-amatic-sc: var(--font-amatic-sc);
+  --font-anonymous-pro: var(--font-anonymous-pro);
+}
+
+.font-monoton {
+  font-family: var(--font-monoton);
+}
+.font-josefinesans {
+  font-family: var(--font-josefin-sans);
+}
+.font-amaticsc {
+  font-family: var(--font-amatic-sc);
+}
+.font-anonymuspro {
+  font-family: var(--font-anonymous-pro);
 }
 
 /* ------- BASE ------- */
@@ -48,6 +69,8 @@ article, aside, figcaption, figure, footer, header, main, nav, section {
 body { 
   background-color: var(--hauptfarbe);
   color: var(--color-font);
+
+  font-family: var(--font-anonymous-pro);
 
   line-height: 1.5;
 
@@ -125,11 +148,13 @@ iframe {
 h1 {
   font-size: 30px;
   margin: 5rem 0 5rem 0;
+  font-family: var(--font-anonymous-pro);
 }
 
 h2 {
   font-size: 25px;
   font-weight: bold;
+  font-family: var(--font-anonymous-pro);
 }
 
 h3 {

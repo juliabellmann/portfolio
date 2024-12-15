@@ -24,7 +24,7 @@ export default function Projects() {
 
                 {/* the Wild Oasis */}
                 <CardContainer>
-                    <h4 className="card-heading">The Wild Oasis</h4>
+                    <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
                     <div className="image-container">
                         <Image 
                             src={wildoasis} 
@@ -37,7 +37,7 @@ export default function Projects() {
                     </div>
 
                     <Modal>
-                        <h4 className="card-heading">The Wild Oasis</h4>
+                        <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
                         <StyledLinkProject href="https://wild-oasis-booking-demo.vercel.app/" target="_blank">
                             <StyledModalImage>
                                 <Image 
@@ -80,7 +80,7 @@ export default function Projects() {
                 </CardContainer>
                 
                 <CardContainer>
-                    <h4 className="card-heading">travel list</h4>
+                    <h4 className="card-heading font-monoton" >Travel List</h4>
                     <div className="image-container">
                         <Image 
                             src={travellist} 
@@ -93,7 +93,7 @@ export default function Projects() {
                     </div>
 
                     <Modal>
-                        <h4 className="card-heading">travel list</h4>
+                        <h4 className="card-heading font-monoton">travel list</h4>
                         <StyledLinkProject href="https://travel-list-orpin.vercel.app/" target="_blank">
                             <StyledModalImage>
                                 <Image 
@@ -113,7 +113,7 @@ export default function Projects() {
                 </CardContainer>
 
                 <CardContainer>
-                        <h4 className="card-heading">budget planner</h4>
+                        <h4 className="card-heading font-amaticsc">budget planner</h4>
                         <div className="image-container">
                             <Image 
                                 src={budgetplanner} 
@@ -126,7 +126,7 @@ export default function Projects() {
                         </div>
 
                     <Modal>
-                        <h4 className="card-heading">budget planner</h4>
+                        <h4 className="card-heading font-amaticsc">budget planner</h4>
                         <StyledLinkProject href="https://budget-planner-blond.vercel.app/" target="_blank">
                             <StyledModalImage>
                                 <Image 
@@ -390,6 +390,7 @@ const StyledModalSkillsContainer = styled.div`
     max-width: 50vw;
     
 `;
+
 // /* ------- PROJECTS ------- */
 
   
