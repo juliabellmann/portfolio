@@ -79,6 +79,10 @@ const StyledDialog = styled.dialog`
     margin: auto;
     /* padding: 30px; */
 
+    max-height: 90vh;
+    max-width: 90vw;
+    overflow-y: auto;
+
     background-color: var(--akzentfarbe);
     color: white;
 
