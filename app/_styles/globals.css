@@ -400,20 +400,41 @@ span {
   transform: scale(1.05);
 }
 
-.image {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-  height: 20px;
-  width: 20px;
-  padding-bottom: 1rem;
+/* .project-image-container {
+  position: relative;
+  transition: transform 0.3s ease;
+  width: 30vw;
+  height: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {
-  .image {
-    height: 20vh;
-    width: 20vh;
-    padding-bottom: 1rem;
+  .project-image-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 15vw;
+    height: 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
   }
+}
+
+.project-image-container:hover {
+  transform: scale(1.05);
+} */
+
+.image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+
 }
 
 .image-container:hover .image {

@@ -39,7 +39,7 @@ export default function Modal({ children }) {
 
     return (
         <>
-            <StyledOpenBtn onClick={handleOpenModal}>More Informations</StyledOpenBtn>
+            <StyledOpenBtn onClick={handleOpenModal}>Informations</StyledOpenBtn>
 
             <StyledDialog ref={modalRef}>
                 {isOpen && (
