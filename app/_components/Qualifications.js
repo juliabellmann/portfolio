@@ -22,7 +22,6 @@ export default function Qualifications() {
                             src={webdev} 
                             alt="Zertifikat Web-Developer"
                             fill
-                            sizes="(max-width: 768px) 100vw, 33vw"
                             style={{ objectFit: 'contain' }}
                             className="image"
                         />
@@ -37,7 +36,6 @@ export default function Qualifications() {
                             src={webdesign} 
                             alt="Zertifikat Web-Designer"
                             fill
-                            sizes="(max-width: 768px) 100vw, 33vw"
                             style={{ objectFit: 'contain' }}
                             className="image"
                         />
@@ -51,7 +49,6 @@ export default function Qualifications() {
                             src={javascript} 
                             alt="Zertifikat Softwareentwicklerin JavaScript"
                             fill
-                            sizes="(max-width: 768px) 100vw, 33vw"
                             style={{ objectFit: 'contain' }}
                             className="image"
                             />
@@ -65,7 +62,6 @@ export default function Qualifications() {
                                 src={udemy_js} 
                                 alt="udemy - JavaScrpit Bescheinigung"
                                 fill
-                                sizes="(max-width: 768px) 100vw, 33vw"
                                 style={{ objectFit: 'contain' }}
                                 className="image"
                             />

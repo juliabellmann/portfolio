@@ -328,7 +328,7 @@ np
   
   width: 70vw;
   height: 40vw;
-  padding: 10px;
+  padding: 25px 10px 25px 10px;
 
   border: 0 solid ;
   border-radius: 20px;
@@ -337,38 +337,25 @@ np
 
 @media (min-width: 1024px) {
   .card {
-    margin: 1rem;
-    padding: 0 1rem;
-
     /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
     width: 28%;
     height: 25vw;
   }
 }
 
-.styledprojectlink {
-  width: 15vw;
-  height: 25vw;
-}
-
 .card-heading {
   font-size: 3.5vw;
   font-weight: normal;
-  height: 3rem;
   display: flex;
   align-items: center;
+  /* margin: 30px 0 0 0; */
 }
 @media (min-width: 1024px) {
   .card-heading {
     font-size: 1.5vw;
-    padding-top: 1rem;
-    height: 6rem;
   }
 }
 
-span {
-  padding-bottom: 1rem;
-}
 /* ------- IMAGE CONTAINER QUALIFICATIONS ------- */
 
 .image-container {
@@ -434,6 +421,7 @@ span {
 .image {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  margin-bottom: 20px;
 
 }
 

@@ -34,8 +34,8 @@ export const CardContainer = styled.div`
     margin: 1rem;
     
     width: 90%;
-    height: 50vw;
-    padding: 10px 10px 20px 10px;
+    height: 55vw;
+    padding: 25px 10px 25px 10px;
   
     border: 0 solid ;
     border-radius: 30px;
@@ -45,7 +45,7 @@ export const CardContainer = styled.div`
     @media (min-width: 1024px) {
         
         width: 28%; /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
-        height: 25vw;
+        height: 27.5vw;
     }
 `;
 
