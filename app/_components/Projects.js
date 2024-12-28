@@ -22,15 +22,15 @@ export default function Projects() {
 
             <Styled.WrapperProjects>
 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                     <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
-                    <Styled.ProjectImgContainer>
-                        <Styled.ProjectImg 
+                    <Styled.ProjectImageContainer>
+                        <Styled.ProjectImage 
                             src={wildoasis} 
                             alt="Projekt 'The Wild Oasis - Booking-Demo' "
                             fill
                             />
-                    </Styled.ProjectImgContainer>
+                    </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
@@ -71,17 +71,17 @@ export default function Projects() {
                             </Styled.ModalSkills>
                         </Styled.ModalSkillsContainer>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
                 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                     <h4 className="card-heading font-monoton" >Travel List</h4>
-                    <Styled.ProjectImgContainer>
-                        <Styled.ProjectImg 
+                    <Styled.ProjectImageContainer>
+                        <Styled.ProjectImage 
                             src={travellist} 
                             alt="Projekt 'Travel-List' "
                             fill
                             />
-                    </Styled.ProjectImgContainer>
+                    </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading font-monoton">travel list</h4>
@@ -99,17 +99,17 @@ export default function Projects() {
                             <p> more informations coming soon </p>
                         </div>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                         <h4 className="card-heading font-amaticsc">budget planner</h4>
-                        <Styled.ProjectImgContainer>
-                            <Styled.ProjectImg 
+                        <Styled.ProjectImageContainer>
+                            <Styled.ProjectImage 
                                 src={budgetplanner} 
                                 alt="Projekt 'Budget-Planner' "
                                 fill
                                 />
-                        </Styled.ProjectImgContainer>
+                        </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading font-amaticsc">budget planner</h4>
@@ -127,17 +127,17 @@ export default function Projects() {
                             <p> more informations coming soon </p>
                         </div>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                     <h4 className="card-heading">leaf logger</h4>
-                    <Styled.ProjectImgContainer>
-                        <Styled.ProjectImg 
+                    <Styled.ProjectImageContainer>
+                        <Styled.ProjectImage 
                             src={leaflogger} 
                             alt="Projekt 'Leaf-Logger' "
                             fill
                             />
-                    </Styled.ProjectImgContainer>
+                    </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading">leaf logger</h4>
@@ -155,43 +155,43 @@ export default function Projects() {
                             <p> more informations coming soon </p>
                         </div>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
                 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                     <h4 className="card-heading">swearing plant</h4>
-                    <Styled.ProjectImgContainer>
-                        <Styled.ProjectImg 
+                    <Styled.ProjectImageContainer>
+                        <Styled.ProjectImage 
                             src={swearingplant} 
                             alt="Projekt 'Budget-Planner' "
                             fill
                         />
-                    </Styled.ProjectImgContainer>
+                    </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading">swearing plant</h4>
-                        <Styled.ProjectImgContainer>
-                            <Styled.ProjectImg 
+                        <Styled.ProjectImageContainer>
+                            <Styled.ProjectImage 
                                 src={swearingplant} 
                                 alt="Projekt 'Budget-Planner' "
                                 fill
                             />
-                        </Styled.ProjectImgContainer>
+                        </Styled.ProjectImageContainer>
                         <div>
                             <span>created with Arduino</span>
                             <p> more informations coming soon </p>
                         </div>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                     <h4 className="card-heading">workflow wizzard</h4>
-                    <Styled.ProjectImgContainer>
-                        <Styled.ProjectImg 
+                    <Styled.ProjectImageContainer>
+                        <Styled.ProjectImage 
                             src={workflowwizzard} 
                             alt="Projekt 'Workflow Wizzard' "
                             fill
                             />
-                    </Styled.ProjectImgContainer>
+                    </Styled.ProjectImageContainer>
 
                     <Modal>
                         <h4 className="card-heading">workflow wizzard</h4>
@@ -209,17 +209,17 @@ export default function Projects() {
                             <p> more informations coming soon </p>
                         </div>
                     </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
 
-                <Styled.CardContainer>
+                <Styled.ProjectCard>
                         <h4 className="card-heading">usePopcorn</h4>
-                        <Styled.ProjectImgContainer>
-                            <Styled.ProjectImg 
+                        <Styled.ProjectImageContainer>
+                            <Styled.ProjectImage 
                                 src={usepopcorn} 
                                 alt="Projekt 'usePopcorn' "
                                 fill
                             />
-                        </Styled.ProjectImgContainer>
+                        </Styled.ProjectImageContainer>
                         
                         <Modal>
                             <h4 className="card-heading">usePopcorn</h4>
@@ -237,14 +237,14 @@ export default function Projects() {
                                 <p> more informations coming soon </p>
                             </div>
                         </Modal>
-                </Styled.CardContainer>
+                </Styled.ProjectCard>
 
-            <Styled.CardContainer>
+            <Styled.ProjectCard>
                 <Styled.EmptyProject>
                     <h4>Web-Shop</h4>
                     <h4>coming soon</h4>
                 </Styled.EmptyProject>
-            </Styled.CardContainer>
+            </Styled.ProjectCard>
                        
             </Styled.WrapperProjects>
         </>

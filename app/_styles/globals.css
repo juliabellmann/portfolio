@@ -101,48 +101,6 @@ main {
   color: var(--akzentfarbe);
 }
 
-/* ------- NAVIGATION ------- */
-nav svg {
-  height: 1.5rem;
-  padding-right: 0.5rem;
- } 
- 
- .nav-icon {
-  display: flex;
- }
- nav {
-   background-color: var(--background-nav-footer);
-   color: var(--color-font);
-   
-   }  
- .nav-mode {
-   display: flex;
-   flex-direction: row;
-   justify-content:space-around;
-   align-items: center;
- }
-
-/* ------- I FRAME ------- */
-iframe {
-  min-height: 70vh;
-  max-height: 80vh;
-  min-width: 80vw;
-  max-width: 90vw;
-  padding-bottom: 5rem;
-  margin-top: 2rem;
-}
-
-  @media (min-width: 1024px) {
-    iframe {
-      min-height: 80vh;
-      max-height: 90vh;
-      min-width: 65vw;
-      max-width: 90vw;
-      padding-bottom: 5rem;
-      margin-top: 2rem;
-    }
-}
-
 /* ------- FONT SIZES ------- */
 
 h1 {
@@ -201,6 +159,28 @@ hr {
   }
 
 }
+
+/* ------- NAVIGATION ------- */
+nav svg {
+  height: 1.5rem;
+  padding-right: 0.5rem;
+ } 
+ 
+ .nav-icon {
+  display: flex;
+ }
+ nav {
+   background-color: var(--background-nav-footer);
+   color: var(--color-font);
+   
+   }  
+ .nav-mode {
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   align-items: center;
+ }
+
 /* ------- SKILLS ------- */
 section h3 {
   font-weight: bold;
@@ -248,7 +228,7 @@ aside div {
 }
 
 
-/* -------------- */
+/* ------- HEADING BIG ------- */
 
 .heading-big {
   position: relative; 
@@ -281,67 +261,8 @@ aside div {
     font-style: italic;
   }
 }
-np
-/* ------- PROJECTS ------- */
-.container-cards {
-  color: var(--card-text-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* width: 90%; */
 
-  position: relative;
-
-}
-
-.card-txt {
-  position: absolute;
-  color: red;
-  /* rotate: -45deg; */
-  margin-top: 7rem;
-  font-size: 1.8rem;
-  width: 250px ;
-  background-color: hsla(0, 0%, 100%, 0.5);
-}
-
-@media (min-width: 1024px) {
-  .container-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card-txt {
-    position: absolute;
-    font-size: 1.7vw;
-    background-color: hsla(0, 0%, 100%, 0.5);
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: var(--akzentfarbe);
-  margin: 1rem;
-  
-  width: 70vw;
-  height: 40vw;
-  padding: 25px 10px 25px 10px;
-
-  border: 0 solid ;
-  border-radius: 20px;
-  box-shadow: 2px 5px 0 var(--boxshadow);
-}
-
-@media (min-width: 1024px) {
-  .card {
-    /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
-    width: 28%;
-    height: 25vw;
-  }
-}
+/* ------- HEADING CARDS ------- */
 
 .card-heading {
   font-size: 3.5vw;
@@ -353,72 +274,13 @@ np
 }
 @media (min-width: 1024px) {
   .card-heading {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
   }
 }
 
 /* ------- IMAGE CONTAINER QUALIFICATIONS ------- */
 
-.image-container {
-  position: relative;
-  transition: transform 0.3s ease;
-  width: 30vw;
-  height: 30vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (min-width: 1024px) {
-  .image-container {
-    position: relative;
-    /* overflow: hidden; */
-    transition: transform 0.3s ease;
-    width: 15vw;
-    height: 20vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.image-container:hover {
-  transform: scale(1.05);
-}
-
-/* .project-image-container {
-  position: relative;
-  transition: transform 0.3s ease;
-  width: 30vw;
-  height: 30vw;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (min-width: 1024px) {
-  .project-image-container {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    width: 15vw;
-    height: 15vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-  }
-}
-
-.project-image-container:hover {
-  transform: scale(1.05);
-} */
-
+/* TODO */
 .image {
   filter: grayscale(100%);
   transition: filter 0.3s ease;

@@ -23,7 +23,7 @@ export const WrapperProjects = styled.div`
     }
 `;
 
-export const CardContainer = styled.div`
+export const ProjectCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ export const CardContainer = styled.div`
     }
 `;
 
-export const ProjectImgContainer = styled.div`
+export const ProjectImageContainer = styled.div`
     position: relative;
 
     display: flex;
@@ -80,7 +80,7 @@ export const ProjectImgContainer = styled.div`
   }
 `;
 
-export const ProjectImg = styled(Image)`
+export const ProjectImage = styled(Image)`
 
   filter: grayscale(100%);
   transition: filter 0.3s ease;
@@ -108,8 +108,8 @@ position: relative;
 
 export const ModalImage = styled.div`
 position: relative;
-    /* width: 30vw; */
-    /* height: 25vw; */
+    width: 30vw;
+    height: 25vw;
     /* margin: 10px 50px; */
 `;
 
@@ -150,39 +150,3 @@ export const ModalSkillsContainer = styled.div`
     max-width: 50vw;
     
 `;
-
-// /* ------- PROJECTS ------- */
-
-  
-//   .card-txt {
-//     position: absolute;
-//     color: red;
-//     /* rotate: -45deg; */
-//     margin-top: 7rem;
-//     font-size: 1.8rem;
-//     width: 250px ;
-//     background-color: hsla(0, 0%, 100%, 0.5);
-//   }
-  
-
-//     .card-txt {
-//       position: absolute;
-//       font-size: 1.7vw;
-//       background-color: hsla(0, 0%, 100%, 0.5);
-//     }
-//   }
-  
-//   .card-heading {
-//     font-size: 3.5vw;
-//     font-weight: bold;
-//     height: 3rem;
-//     display: flex;
-//     align-items: center;
-//   }
-//   @media (min-width: 1024px) {
-//     .card-heading {
-//       font-size: 1.5vw;
-//       padding-top: 1rem;
-//       height: 6rem;
-//     }
-//   }
