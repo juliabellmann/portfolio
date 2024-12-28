@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
 import webdesign from "../images/webdesign.JPG"
 import webdev from "../images/neuefische.JPG"
 import javascript from "../images/javascript.JPG"

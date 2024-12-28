@@ -102,7 +102,6 @@ main {
 }
 
 /* ------- FONT SIZES ------- */
-
 h1 {
   font-size: 30px;
   margin: 5rem 0 5rem 0;
@@ -118,6 +117,7 @@ h2 {
 h3 {
   font-size: 20px;
 }
+
 h4 {
   font-size: 20px;
   font-weight: lighter;
@@ -127,9 +127,10 @@ p {
   font-size: 16px;
   max-width: 500px;
 }
+
 hr {
   margin: 2rem 0;
-  color: var(--akzentfarbe);
+  border: 3px solid var(--akzentfarbe);
 }
 
 @media (min-width: 1024px) {
@@ -145,6 +146,7 @@ hr {
   h3 {
     font-size: 30px;
   }
+
   h4 {
     font-size: 25px;
   }
@@ -153,6 +155,7 @@ hr {
     font-size: 22px;
     max-width: 900px;
   }
+
   hr {
     margin: 2rem 0;
     border: 3px solid var(--akzentfarbe);
@@ -185,16 +188,18 @@ nav svg {
 section h3 {
   font-weight: bold;
 }
-  svg {
-    height: 35px;
-    fill: var(--akzentfarbe);
-  }
+
+svg {
+  height: 35px;
+  fill: var(--akzentfarbe);
+}
 
 @media (min-width: 1024px) {
   svg {
     height: 50px;
   }
 }
+
 .skills {
   display: flex;
   align-items: center;
@@ -229,7 +234,6 @@ aside div {
 
 
 /* ------- HEADING BIG ------- */
-
 .heading-big {
   position: relative; 
   top: 10rem;
@@ -263,7 +267,6 @@ aside div {
 }
 
 /* ------- HEADING CARDS ------- */
-
 .card-heading {
   font-size: 3.5vw;
   font-weight: normal;

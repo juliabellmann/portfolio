@@ -97,7 +97,18 @@ export const LinkProject = styled(Link)`
 `;
 export const ModalLink = styled(Link)`
     text-decoration: underline;
-    margin: 30px;
+    margin: 10px;
+`;
+
+export const ModalContainer = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px;
+
+
 `;
 
 export const LinkImage = styled.div`
@@ -140,7 +151,7 @@ export const ModalSVG = styled.svg`
 export const Hr = styled.hr`
     border: 2px solid white;
     width: 80%;
-    margin: 10px 0;
+    margin: 20px 0;
 `;
 
 export const ModalSkillsContainer = styled.div`
