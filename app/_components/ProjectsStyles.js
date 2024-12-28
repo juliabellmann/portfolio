@@ -28,11 +28,12 @@ export const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between; // um die Heading oben, das Bild mittig und den Button unten auszurichten
-    /* gap: 15px; //unnötig, da cardhöhe */
+    gap: 15px; 
 
     background-color: var(--akzentfarbe);
     margin: 1rem;
     
+    /* Größe für Handy-Ansicht */
     width: 90%;
     height: 55vw;
     padding: 25px 10px 25px 10px;
@@ -42,10 +43,11 @@ export const CardContainer = styled.div`
     border-top: 1px solid var(--color-font);
     border-bottom: 3px solid var(--color-font);
 
+    
     @media (min-width: 1024px) {
-        
+        /*  für Display-Ansicht */
         width: 28%; /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
-        height: 27.5vw;
+        height: 20vw;
     }
 `;
 
@@ -57,22 +59,20 @@ export const ProjectImgContainer = styled.div`
     justify-content: center;
     
     transition: transform 0.3s ease;
-    width: 30vw;
-    height: 25vw;
+
+    /* Größe für Handy-Ansicht */
+    width: 40vw;
+    height: 55vw;
 
     overflow: hidden;
 
-    padding-bottom: 20px; //?
+    /* padding-bottom: 20px; */
 
+    
     @media (min-width: 1024px) {
+        /* für Display-Ansicht */
         width: 15vw;
         height: 12.5vw;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-
     }
 
   &:hover {
@@ -108,9 +108,9 @@ position: relative;
 
 export const ModalImage = styled.div`
 position: relative;
-    width: 30vw;
-    height: 25vw;
-    margin: 10px 50px;
+    /* width: 30vw; */
+    /* height: 25vw; */
+    /* margin: 10px 50px; */
 `;
 
 export const EmptyProject = styled.div`
