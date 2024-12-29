@@ -6,6 +6,8 @@ import javascript from "../images/javascript.JPG"
 import udemy_js from "../images/udemy_js.jpg"
 import udemy_react from "../images/udemy_react.jpg"
 import udemy_fullstack from "../images/udemy_fullstack.jpg"
+import Modal from "./Modal";
+
 
 import * as Styled from "./QualificationsStyles";
 
@@ -26,6 +28,24 @@ export default function Qualifications() {
                             fill
                         />
                     </Styled.QualificationsImageContainer>
+
+                                        <Modal>
+                                            <Styled.ModalContainer>
+                                                <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
+
+                                                <div>
+                                                    <h6>To open the project in a new tab and try it out:</h6>
+                                                </div>
+                                                <Styled.ModalLink href="https://wild-oasis-booking-demo.vercel.app/" target="_blank">
+                                                    hier klicken | click here
+                                                </Styled.ModalLink>
+                                                <Styled.Hr></Styled.Hr>
+                                                <h4>Used Skills</h4>
+                                                <Styled.Hr></Styled.Hr>
+                                                <h4>About the Project</h4>
+                                                <p>Dieses Projekt entstand mit Hilfe des Udemy Kurses XY von XY. Es ist eine Seite für die Buchung von Cabinen mit Login. </p>
+                                            </Styled.ModalContainer>
+                                        </Modal>
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>

@@ -3,7 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-// import {LogoPF} from "../assets/icons/Logo-Portfolio.svg";
+import logo from "../icons/logo.svg";
+import Image from "next/image";
 
 export default function Navbar() {
 
@@ -19,7 +20,7 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <div className="nav-mode">
-                                {/* <LogoPF /> */}
+                                <Image src={logo} alt="Logo of the Homepage" height={45} width={45}></Image>
                                 <div><Link href="/" className=" hover:bg-white hover:text-black rounded-lg p-2 px-5"><strong>DevFolio</strong></Link></div>
                                 <ThemeToggle></ThemeToggle>
                             </div>
