@@ -70,8 +70,6 @@ body {
   background-color: var(--hauptfarbe);
   color: var(--color-font);
 
-  font-family: var(--font-anonymous-pro);
-
   line-height: 1.5;
 
   display: flex;
@@ -103,29 +101,32 @@ main {
 
 /* ------- FONT SIZES ------- */
 h1 {
-  font-size: 30px;
+  font-size: 2.5rem;
   margin: 5rem 0 5rem 0;
   font-family: var(--font-anonymous-pro);
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: bold;
   font-family: var(--font-anonymous-pro);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
+  font-family: var(--font-anonymous-pro);
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: lighter;
+  font-family: var(--font-roboto-mono);
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   max-width: 500px;
+  font-family: var(--font-roboto-mono);
 }
 
 hr {
@@ -133,32 +134,33 @@ hr {
   border: 3px solid var(--akzentfarbe);
 }
 
+/* Schriftgrößen für den Desktop */
 @media (min-width: 1024px) {
   h1 {
-    font-size: 60px;
+    font-size: 3.5rem;
     margin: 5rem 0 10rem 0;
   }
   
   h2 {
-    font-size: 35px;
+    font-size: 3rem;
   }
   
   h3 {
-    font-size: 30px;
+    font-size: 2.5rem;
   }
 
   h4 {
-    font-size: 25px;
+    font-size: 2rem;
   }
   
   p {
-    font-size: 22px;
+    font-size: 1.5rem;
     max-width: 900px;
   }
 
   hr {
     margin: 2rem 0;
-    border: 3px solid var(--akzentfarbe);
+    border: 0.2rem solid var(--akzentfarbe);
   }
 
 }
@@ -190,13 +192,13 @@ section h3 {
 }
 
 svg {
-  height: 35px;
+  height: 2rem;
   fill: var(--akzentfarbe);
 }
 
 @media (min-width: 1024px) {
   svg {
-    height: 50px;
+    height: 3rem;
   }
 }
 
@@ -204,10 +206,10 @@ svg {
   display: flex;
   align-items: center;
   border: 0.5px solid var(--akzentfarbe);
-  border-radius: 20px;
+  border-radius: 1rem;
 
-  margin: 10px;
-   gap: 15px; /* zwischen svg und Bezeichnung*/
+  margin: 0.5rem;
+   gap: 1rem; /* zwischen svg und Bezeichnung*/
 }
 
 aside {
@@ -279,20 +281,6 @@ aside div {
   .card-heading {
     font-size: 1.25vw;
   }
-}
-
-/* ------- IMAGE CONTAINER QUALIFICATIONS ------- */
-
-/* TODO */
-.image {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-  margin-bottom: 20px;
-
-}
-
-.image-container:hover .image {
-  filter: grayscale(0);
 }
 
 /* ------- FOOTER ------- */
