@@ -95,6 +95,7 @@ export const ProjectImage = styled(Image)`
 export const LinkProject = styled(Link)`
 /* text-decoration: underline; */
 `;
+
 export const ModalLink = styled(Link)`
     text-decoration: underline;
     margin: 10px;
@@ -112,16 +113,17 @@ export const ModalContainer = styled.div`
 `;
 
 export const LinkImage = styled.div`
-position: relative;
+    /* position: relative; */
     width: 35vw;
     height: 30vw;
+
 `;
 
 export const ModalImage = styled.div`
-position: relative;
+    position: relative;
     width: 30vw;
     height: 25vw;
-    /* margin: 10px 50px; */
+    margin: 10px 50px;
 `;
 
 export const EmptyProject = styled.div`

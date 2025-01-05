@@ -120,3 +120,9 @@ export const QualificationList = styled.ul`
 
     margin: 1rem;
 `;
+
+export const Hr = styled.hr`
+    border: 2px solid white;
+    width: 80%;
+    margin: 20px 0;
+`;

@@ -34,7 +34,7 @@ export default function Projects() {
 
                     <Modal>
                         <Styled.ModalContainer>
-                            <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
+                            <h2 className="font-josefinesans mt-20">The Wild Oasis</h2>
                             <Styled.LinkProject href="https://wild-oasis-booking-demo.vercel.app/" target="_blank">
                                 <Styled.ModalImage>
                                     <Image 
@@ -44,9 +44,7 @@ export default function Projects() {
                                     />
                                 </Styled.ModalImage>
                             </Styled.LinkProject>
-                            <div>
-                                <h6>To open the project in a new tab and try it out:</h6>
-                            </div>
+
                             <Styled.ModalLink href="https://wild-oasis-booking-demo.vercel.app/" target="_blank">
                                 hier klicken | click here
                             </Styled.ModalLink>
