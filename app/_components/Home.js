@@ -5,12 +5,11 @@ export default function Home() {
             <h1>Julia Bellmann</h1>
             
             <div className="home-heading">
-                <h2>
-                    <span className="nobreak">Web-Developer </span>
-                    <span className="accentcolor">|</span> Softwarentwicklerin JavaScript <span className="nobreak">
-                        <span className="accentcolor">|</span> Web-Designer
-                    </span>
-                </h2>
+                <span className="nobreak">Web-Developer</span>
+                <span className="accentcolor"> | </span>
+                <span className="nobreak"> Web-Designer</span>
+                <span className="accentcolor"> | </span>
+                <span className="">Softwarentwicklerin JavaScript</span>    
             </div>
             <div>
 
