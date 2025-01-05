@@ -10,6 +10,7 @@ import Modal from "./Modal";
 
 
 import * as Styled from "./QualificationsStyles";
+import Link from "next/link";
 
 export default function Qualifications() {
     return (
@@ -20,7 +21,7 @@ export default function Qualifications() {
             <Styled.QualfificationsWrapper>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Web&nbsp;-&nbsp;Developer</h4>
+                    <h4 className="card-heading">Web-Developer</h4>
                     <Styled.QualificationsImageContainer>
                     <Styled.QualificationsImage  
                             src={webdev} 
@@ -31,20 +32,30 @@ export default function Qualifications() {
 
                                         <Modal>
                                             <Styled.ModalContainer>
-                                                <h4 className="card-heading font-josefinesans">The Wild Oasis</h4>
-
+                                                <h4 className="card-heading">Web-Developer</h4>
+                                                <h3>Abschluss: Zertifikat Web-Entwickler</h3>
+                                                <h4>Vollzeit Bootcamp Remote</h4>
+                                                <h5>Anbieter: Neue Fische </h5>
                                                 <div>
-                                                    <h6>To open the project in a new tab and try it out:</h6>
+                                                    <h5>Kursinhalt:</h5>
+                                                    <Styled.QualificationList>
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                        <li>JavaScript</li>
+                                                        <li>React</li>
+                                                        <li>Pair Programming</li>
+                                                        <li>Node.js</li>
+                                                        <li>NoSQL</li>
+                                                        <li>REST</li>
+                                                        <li>Shell</li>
+                                                        <li>Git</li>
+                                                        <li>Design Basics</li>
+                                                        <li>Agile Workflow</li>
+                                                        <li>Tooling</li>
+                                                    </Styled.QualificationList>
                                                 </div>
-                                                <Styled.ModalLink href="https://wild-oasis-booking-demo.vercel.app/" target="_blank">
-                                                    hier klicken | click here
-                                                </Styled.ModalLink>
-                                                <Styled.Hr></Styled.Hr>
-                                                <h4>Used Skills</h4>
-                                                <Styled.Hr></Styled.Hr>
-                                                <h4>About the Project</h4>
-                                                <p>Dieses Projekt entstand mit Hilfe des Udemy Kurses XY von XY. Es ist eine Seite für die Buchung von Cabinen mit Login. </p>
-                                            </Styled.ModalContainer>
+                                                <Styled.QualificationLink href="https://assets.ctfassets.net/m8n66tuamygx/6TfPYjWAl4LuUDTveiybcc/3ec88ed49dec00bffa63f08724432da8/NF_Infomaterial-2024_DE.pdf">hier geht es zur Kursbeschreibung direkt beim Anbieter</Styled.QualificationLink>
+                                               </Styled.ModalContainer>
                                         </Modal>
                 </Styled.QualificationCard>
 

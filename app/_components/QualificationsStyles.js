@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 export const QualfificationsWrapper = styled.div`
     position: relative;
@@ -86,4 +87,36 @@ filter: grayscale(100%);
     &:hover {
     filter: grayscale(0);
     }
+`;
+
+export const ModalContainer = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px;
+
+
+`;
+
+export const QualificationLink = styled(Link)`
+
+    text-decoration: underline;
+
+`;
+
+export const QualificationList = styled.ul`
+
+    list-style: square;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
 `;
