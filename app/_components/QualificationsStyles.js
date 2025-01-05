@@ -32,7 +32,7 @@ export const QualificationCard = styled.div`
     
     /* Größe für Handy-Ansicht */
     width: 90%;
-    height: 55vw;
+    height: 60vw;
     padding: 25px 10px 25px 10px;
   
     border: 0 solid ;
@@ -44,7 +44,7 @@ export const QualificationCard = styled.div`
     @media (min-width: 1024px) {
         /*  für Display-Ansicht */
         width: 28%; /* width <= 33%, damit nur 3 Cards je Reihe dargestellt werden */
-        height: 20vw;
+        height: 25vw;
     }
 `;
 
