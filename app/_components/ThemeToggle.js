@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import moon from "../icons/contrast-2-fill.svg";
-import sun from "../icons/contrast-2-line.svg";
+import moon from "../icons/moon.svg";
+import sun from "../icons/sun.svg";
 import Image from 'next/image';
 
 const ThemeToggle = () => {

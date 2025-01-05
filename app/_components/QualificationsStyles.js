@@ -8,7 +8,7 @@ export const QualfificationsWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 90%; // des Mains
+width: 100%; // des Mains
 
 color: var(--card-text-color);
 
