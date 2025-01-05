@@ -8,8 +8,8 @@ export default function Impressum() {
         <div class='impressum'>
             <p>Angaben gemäß § 5 DDG</p>
             <p>Julia Bellmann<br /> 
-                Schwabstr. 109<br /> 
-                71672 Marbach am Neckar
+                Straße<br /> 
+                Ort
             </p>
             <br /> 
             <p> <strong>Vertreten durch: </strong><br />
