@@ -1,8 +1,13 @@
+import LogoBig from "./LogoBig"
+
 export default function Home() {
     return (
         <>
+            <h2 className="logo-big"><LogoBig /></h2>
             <h2 className="heading-big">Bellmann</h2>
             <h1>Julia Bellmann</h1>
+            
+
             
             <div className="home-heading">
                 <span className="nobreak">Web-Developer</span>

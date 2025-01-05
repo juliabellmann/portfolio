@@ -138,7 +138,7 @@ hr {
 @media (min-width: 1024px) {
   h1 {
     font-size: 3.5rem;
-    margin: 5rem 0 10rem 0;
+    margin: 5rem 0 5rem 0;
   }
   
   h2 {
@@ -191,13 +191,13 @@ section h3 {
   font-weight: bold;
 }
 
-svg {
+aside svg {
   height: 2rem;
   fill: var(--akzentfarbe);
 }
 
 @media (min-width: 1024px) {
-  svg {
+  aside svg {
     height: 3rem;
   }
 }
@@ -245,7 +245,7 @@ aside div {
   
   font-size: 7vw;
   color: var(--akzentfarbe);
-  opacity: 0.9;
+  /* opacity: 0.9; */
   z-index: -1;
   font-weight: bold;
   font-style: italic;
@@ -261,10 +261,32 @@ aside div {
     
     font-size: 6vw;
     color: var(--akzentfarbe);
-    opacity: 0.75;
+    /* opacity: 0.75; */
     z-index: -1;
     font-weight: bold;
     font-style: italic;
+  }
+}
+.logo-big {
+  position: relative; 
+  top: 5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  font-size: 7vw;
+  color: var(--akzentfarbe);
+  /* opacity: 0.9; */
+  z-index: -10;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .logo-big {
+    top: 5rem;
+    
+    font-size: 6vw;
   }
 }
 
