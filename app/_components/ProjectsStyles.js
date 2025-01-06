@@ -93,7 +93,7 @@ export const ProjectImage = styled(Image)`
 `;
 
 export const LinkProject = styled(Link)`
-/* text-decoration: underline; */
+text-decoration: underline;
 `;
 
 export const ModalLink = styled(Link)`
@@ -101,7 +101,7 @@ export const ModalLink = styled(Link)`
     margin: 10px;
 `;
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled.section`
 
     display: flex;
     flex-direction: column;
@@ -162,4 +162,19 @@ export const ModalSkillsContainer = styled.div`
     justify-content: center;
     max-width: 50vw;
     
+`;
+
+export const ProjectList = styled.ul`
+
+    list-style: square;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem; */
 `;

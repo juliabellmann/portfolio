@@ -14,7 +14,7 @@ export default function Home() {
                 <span className="accentcolor"> | </span>
                 <span className="nobreak"> Web-Designer</span>
                 <span className="accentcolor"> | </span>
-                <span className="">Softwarentwicklerin JavaScript</span>    
+                <span>Softwarentwicklerin JavaScript</span>    
             </div>
             <div>
 

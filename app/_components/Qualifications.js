@@ -22,7 +22,7 @@ export default function Qualifications() {
             <Styled.QualfificationsWrapper>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Web-Developer</h4>
+                    <h4>Web-Developer</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={webdev} 
@@ -33,7 +33,7 @@ export default function Qualifications() {
                     <Modal>
                         <Styled.ModalContainer>
                             <h2>Zertifikat Web-Developer</h2>
-                            <h3>Vollzeit Bootcamp Remote</h3>
+                            <h3>Vollzeit Bootcamp Remote | 3 Monate</h3>
                             <h4>Anbieter: Neue Fische </h4>
 
                             <Styled.Hr></Styled.Hr>
@@ -63,7 +63,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Web&nbsp;-&nbsp;Designer</h4>
+                    <h4>Web&nbsp;-&nbsp;Designer</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={webdesign} 
@@ -74,7 +74,7 @@ export default function Qualifications() {
                     <Modal>
                         <Styled.ModalContainer>
                             <h2>Zertifikat Web-Design</h2>
-                            <h3>Vollzeit Bootcamp Remote 2 Monate</h3>
+                            <h3>Vollzeit Online-Weiterbildung | 2 Monate</h3>
                             <h4>Anbieter: GFN GmbH </h4>
 
                             <Styled.Hr></Styled.Hr>
@@ -127,7 +127,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Softwareentwicklerin</h4>
+                    <h4>Softwareentwicklerin</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={javascript} 
@@ -139,7 +139,7 @@ export default function Qualifications() {
                         <Styled.ModalContainer>
 
                             <h2>Abschluss: Zertifikat Softwareentwicklerin JavaScript</h2>
-                            <h3>Vollzeit Bootcamp Remote 3 Monate</h3>
+                            <h3>Vollzeit Online-Weiterbildung | 3 Monate</h3>
                             <h4>Anbieter: GFN GmbH</h4>
 
                             <Styled.Hr></Styled.Hr>
@@ -202,7 +202,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Python</h4>
+                    <h4>Python</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={python}
@@ -213,7 +213,7 @@ export default function Qualifications() {
                     <Modal>
                         <Styled.ModalContainer>
                             <h2>Programmierung Basiswissen mit Python</h2>
-                            <h3>Vollzeit Bootcamp Remote 1 Monat</h3>
+                            <h3>Vollzeit Online-Weiterbildung | 1 Monat</h3>
                             <h4>Anbieter: GFN GmbH </h4>
 
                             <Styled.Hr></Styled.Hr>
@@ -243,7 +243,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
             
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">JavaScript</h4>
+                    <h4>JavaScript</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage 
                             src={udemy_js} 
@@ -266,7 +266,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">React, Next.js & co.</h4>
+                    <h4>React, Next.js & co.</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={udemy_react} 
@@ -289,7 +289,7 @@ export default function Qualifications() {
                 </Styled.QualificationCard>
 
                 <Styled.QualificationCard>
-                    <h4 className="card-heading">Full Stack Dev</h4>
+                    <h4>Full Stack Dev</h4>
                     <Styled.QualificationsImageContainer>
                         <Styled.QualificationsImage  
                             src={udemy_fullstack} 
