@@ -83,6 +83,7 @@ export default function Projects() {
                                     <li>adding metadata and favicon</li>
                                     <li>Nested Layouts</li>
                                     <li>API using Supabase</li>
+                                    <li>Suspense</li>
                                 </Styled.ProjectList>
                         </Styled.ModalContainer>
                     </Modal>
@@ -339,7 +340,7 @@ export default function Projects() {
 
                     <Modal>
                         <Styled.ModalContainer>
-                            <h4>workflow wizzard</h4>
+                            <h2>workflow wizzard</h2>
                             <Styled.LinkProject href="https://the-workflow-wizard.vercel.app/" target="_blank">
                                 <Styled.ModalImage>
                                     <Image 
@@ -433,7 +434,7 @@ export default function Projects() {
                         
                         <Modal>
                             <Styled.ModalContainer>
-                                <h4>usePopcorn</h4>
+                                <h2>usePopcorn</h2>
                                 <Styled.LinkProject href="https://use-popcorn-app-nine.vercel.app/" target="_blank">
                                     <Styled.ModalImage>
                                         <Image 

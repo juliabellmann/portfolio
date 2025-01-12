@@ -58,6 +58,14 @@ const StyledOpenBtn = styled.button`
     color: var(--akzentfarbe);
     padding: 10px 20px;
     border-radius: 15px;
+    transition: text-decoration 0.01ms ease-in-out;
+
+    &:hover {
+      /* transform: scale(1.05); */
+      text-decoration: underline;
+      font-weight: bolder;
+      padding: 10px 15.5px;
+    }
     `;
 
 const StyledClosebtn = styled.button`
